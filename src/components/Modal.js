@@ -3,57 +3,54 @@ import {Audio} from 'expo';
 import {View, Text, StyleSheet, Dimensions, TouchableWithoutFeedback,
     TouchableNativeFeedback} from 'react-native';
 import {MaterialIcons} from '@expo/vector-icons';
-import Furi from 'react-native-furi';
+import {Subscribe} from 'unstated';
 import Dialog, {DialogContent, ScaleAnimation} from 'react-native-popup-dialog';
+import ModalStateContainer from '../state-containers/ModalStateContainer';
+import WordSoundContainer from '../state-containers/WordSoundContainer';
+
 class Modal extends React.Component{
   playSound = async () => {
     await this.props.data.exampleAudio.replayAsync();
   }
   render(){
-    const {
-      visible,
-      handleVisible,
-      data: {
-        kanji,
-        hira,
-        meaning,
-        vn,
-        example,
-        exampleMeaning
-      }
-    } = this.props;
     return (
-      <View>
-        <Dialog visible={visible} onTouchOutside={handleVisible} dialogStyle={styles.dialogWrapper} dialogAnimation={new ScaleAnimation()}>
-          <DialogContent style={styles.dialogContent}>
-            <View style={styles.dialogHeader}>
-              <TouchableWithoutFeedback onPress={handleVisible}>
-                <View style={styles.closeBtnWrapper}>
-                  <MaterialIcons name="close" size={24} color='#fff'/>
-                </View>
-              </TouchableWithoutFeedback>
-            </View>
-            <View style={styles.dialogBody}>
-              <View style={styles.dialogHeading}>
-                <Text style={styles.kanji}>{kanji}</Text>
-                <Text style={styles.meaning}>{meaning}</Text>
-              </View>
-              <View style={styles.buttonWrapper}>
-                <TouchableNativeFeedback onPress={() => {
-                    this.playSound();
-                  }} background={TouchableNativeFeedback.SelectableBackground()}>
-                  <View style={styles.iconWrapper}>
-                    <MaterialIcons name="volume-up" size={23}/>
+      <Subscribe to={[ModalStateContainer, WordSoundContainer]}>
+        {
+          ({state: {kanji, hira, meaning, example, exampleMeaning, exampleAudio, visible}, handleVisible}, player) => (
+            <View>
+              <Dialog visible={visible} onTouchOutside={handleVisible} dialogStyle={styles.dialogWrapper} dialogAnimation={new ScaleAnimation()}>
+                <DialogContent style={styles.dialogContent}>
+                  <View style={styles.dialogHeader}>
+                    <TouchableWithoutFeedback onPress={handleVisible}>
+                      <View style={styles.closeBtnWrapper}>
+                        <MaterialIcons name="close" size={24} color='#fff'/>
+                      </View>
+                    </TouchableWithoutFeedback>
                   </View>
-                </TouchableNativeFeedback>
-              </View>
-              <Text>Ví dụ:</Text>
-              <Text style={styles.example}>{example}</Text>
-              <Text style={styles.hira}>{exampleMeaning}</Text>
+                  <View style={styles.dialogBody}>
+                    <View style={styles.dialogHeading}>
+                      <Text style={styles.kanji}>{kanji}</Text>
+                      <Text style={styles.meaning}>{meaning}</Text>
+                    </View>
+                    <View style={styles.buttonWrapper}>
+                      <TouchableNativeFeedback onPress={async () => {
+                          await player.loadSound(exampleAudio);
+                        }} background={TouchableNativeFeedback.SelectableBackground()}>
+                        <View style={styles.iconWrapper}>
+                          <MaterialIcons name="volume-up" size={23}/>
+                        </View>
+                      </TouchableNativeFeedback>
+                    </View>
+                    <Text>Ví dụ:</Text>
+                    <Text style={styles.example}>{example}</Text>
+                    <Text style={styles.hira}>{exampleMeaning}</Text>
+                  </View>
+                </DialogContent>
+              </Dialog>
             </View>
-          </DialogContent>
-        </Dialog>
-      </View>
+          )
+        }
+      </Subscribe>
     )
   }
 }
@@ -66,7 +63,7 @@ const styles = StyleSheet.create({
       ? width * 8 / 10
       : width - 20,
     height: height * 5 / 10,
-    marginTop: height * 1.2 / 10,
+    marginTop: height * 1.1 / 10,
     backgroundColor: '#e57373',
     borderRadius: 10
   },

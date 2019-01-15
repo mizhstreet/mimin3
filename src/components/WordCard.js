@@ -1,53 +1,15 @@
 import React from 'react';
-import {Audio} from 'expo';
-import {View, Text, StyleSheet, TouchableNativeFeedback} from 'react-native';
+import {Subscribe} from 'unstated';
+import {View, Text, StyleSheet, TouchableNativeFeedback, TouchableWithoutFeedback} from 'react-native';
 import {MaterialIcons} from '@expo/vector-icons';
-import ModalExample from './Modal';
+import WordSoundContainer from '../state-containers/WordSoundContainer';
+import ModalStateContainer from '../state-containers/ModalStateContainer';
 export default class WordCard extends React.Component{
   state = {
-    iconName: "star-border",
-    wordSoundPlayer: null,
-    exampleSoundPlayer: null
-  }
-  loadExampleSound = async () => {
-    try {
-      if(this.state.exampleSoundPlayer == null){
-        const soundObject = new Audio.Sound();
-        await soundObject.loadAsync(this.props.cardData.exampleAudio);
-        this.setState({
-          exampleSoundPlayer: soundObject
-        })
-      }
-    } catch (err) {
-      console.warn(err);
-    }
-  }
-  playSound = async () => {
-    try {
-      this.state.wordSoundPlayer.replayAsync();
-    } catch (e) {
-      alert("Could not play audio");
-    }
-  }
-  loadSound = async () => {
-    try {
-      if(this.state.wordSoundPlayer == null){
-        const soundObject = new Audio.Sound();
-        await soundObject.loadAsync(this.props.cardData.audio);
-        this.setState({
-          wordSoundPlayer: soundObject
-        })
-      }
-    } catch (err) {
-      console.warn(err);
-    }
-  }
-  async componentDidMount() {
-    await this.loadSound();
-    await this.loadExampleSound();
+    iconName: "favorite-border"
   }
   render(){
-    const {kanji, hira, exampleAudio, vn, meaning, furi, example, exampleMeaning} = this.props.cardData;
+    const {audio, kanji, hira, exampleAudio, vn, meaning, example, exampleMeaning} = this.props.cardData;
     return(
       <View style={styles.card}>
         <View style={styles.cardContent}>
@@ -62,17 +24,9 @@ export default class WordCard extends React.Component{
           <View style={styles.buttonWrapper}>
             <TouchableNativeFeedback
               onPress={() => {
-                this.props.setModalData({
-                  kanji,
-                  hira,
-                  meaning,
-                  vn,
-                  example,
-                  furi,
-                  exampleMeaning,
-                  exampleAudio: this.state.exampleSoundPlayer
+                this.setState({
+                  iconName: "favorite"
                 });
-                this.props.handleVisible();
               }}
               background={TouchableNativeFeedback.SelectableBackground()}>
                 <View style={styles.iconWrapper}>
@@ -81,15 +35,45 @@ export default class WordCard extends React.Component{
             </TouchableNativeFeedback>
           </View>
           <View style={styles.buttonWrapper}>
-            <TouchableNativeFeedback
-              onPress={() => {
-                this.playSound();
-              }}
-              background={TouchableNativeFeedback.SelectableBackground()}>
-                <View style={styles.iconWrapper}>
-                    <MaterialIcons name="volume-up" size={23} />
-                </View>
-            </TouchableNativeFeedback>
+            <Subscribe to={[ModalStateContainer]}>
+              {
+                (modalData) => <TouchableNativeFeedback
+                  onPress={async () => {
+                    await modalData.setData({
+                      kanji,
+                      hira,
+                      meaning,
+                      vn,
+                      example,
+                      exampleMeaning,
+                      exampleAudio
+                    });
+                    await modalData.handleVisible();
+                  }}
+                  background={TouchableNativeFeedback.SelectableBackground()}>
+                    <View style={styles.iconWrapper}>
+                        <MaterialIcons name="menu" size={23} />
+                    </View>
+                </TouchableNativeFeedback>
+              }
+            </Subscribe>
+          </View>
+          <View style={styles.buttonWrapper}>
+            <Subscribe to={[WordSoundContainer]}>
+              {
+                (player) => (
+                  <TouchableNativeFeedback
+                    onPress={async () => {
+                      await player.loadSound(audio);
+                    }}
+                    background={TouchableNativeFeedback.SelectableBackground()}>
+                      <View style={styles.iconWrapper}>
+                          <MaterialIcons name="volume-up" size={23} />
+                      </View>
+                  </TouchableNativeFeedback>
+                )
+              }
+            </Subscribe>
           </View>
         </View>
       </View>
@@ -136,15 +120,16 @@ const styles = StyleSheet.create({
     marginVertical: 5
   },
   cardButton: {
-    width: 40
+    width: 30
   },
   buttonWrapper: {
-    borderRadius: 20,
+    borderRadius: 15,
     overflow: "hidden"
   },
   iconWrapper: {
-    height: 40,
-    width: 40,
+    borderColor: "red",
+    height: 30,
+    width: 30,
     justifyContent: 'center',
     alignItems: 'center'
   }

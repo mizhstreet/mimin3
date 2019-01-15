@@ -379,126 +379,126 @@ const data = [{
     audio: a2,
     exampleAudio: ex2
   },
-  // {
-  //   kanji: "高齢",
-  //   hira: "こうれい",
-  //   romaji: "kourei",
-  //   meaning: "tuổi cao",
-  //   vn: "Cao linh",
-  //   example: "祖母は高齢だが、まだとても元気だ",
-  //   exampleMeaning: "Bà tuổi đã cao nhưng vẫn rất khỏe",
-  //   audio: a3,
-  //   exampleAudio: ex3
-  // },
-  // {
-  //   kanji: "年上",
-  //   hira: "としうえ",
-  //   romaji: "toshiue",
-  //   meaning: "lớn tuổi",
-  //   vn: "Niên thượng",
-  //   example: "年上の友達",
-  //   exampleMeaning: "Bạn lớn tuổi hơn",
-  //   audio: a4,
-  //   exampleAudio: ex4
-  // },
-  // {
-  //   kanji: "目上",
-  //   hira: "めうえ",
-  //   romaji: "meue",
-  //   meaning: "cấp trên, bề trên, người trên",
-  //   vn: "Mục thượng",
-  //   example: "目上の人には敬語で話したほうがいい",
-  //   exampleMeaning: "nên dùng kính ngữ để nói chuyện với người bề trên",
-  //   audio: a5,
-  //   exampleAudio: ex5
-  // },
-  // {
-  //   kanji: "先輩",
-  //   hira: "せんぱい",
-  //   romaji: "senpai",
-  //   meaning: "Tiền bối, người đi trước",
-  //   vn: "Tiền bối",
-  //   example: "田中さんと私は同じ年だが、職場では彼のほうが先輩だ",
-  //   exampleMeaning: "anh Tanaka và tôi tuy cùng tuổi, nhưng tại nơi làm việc thì anh ấy là bậc tiền bối",
-  //   audio: a6,
-  //   exampleAudio: ex6
-  // },
-  // {
-  //   kanji: "後輩",
-  //   hira: "こうはい",
-  //   romaji: "",
-  //   meaning: "hậu bối, người đi sau",
-  //   vn: "",
-  //   example: "私はななみさんの２年後輩になりました",
-  //   exampleMeaning: "tôi là người vào sau chị Nanami 2 năm",
-  //   audio: a7,
-  //   exampleAudio: ex2
-  // },
-  // {
-  //   kanji: "上司",
-  //   hira: "じょうし",
-  //   romaji: "",
-  //   meaning: "cấp trên, ông chủ, bề trên",
-  //   vn: "",
-  //   example: "上司に相談してから決定する",
-  //   exampleMeaning: "bàn bạc với cấp trên rồi mới quyết định",
-  //   audio: a8,
-  //   exampleAudio: ex8
-  // },
-  // {
-  //   kanji: "相手",
-  //   hira: "あいて",
-  //   romaji: "",
-  //   meaning: "đối tác, đối phương, đối thủ, người đối diện",
-  //   vn: "",
-  //   example: "相手の目を見て話す",
-  //   exampleMeaning: "nhìn vào mắt đối phương mà nói chuyện",
-  //   audio: a9,
-  //   exampleAudio: ex9
-  // },
-  // {
-  //   kanji: "知り合い",
-  //   hira: "しりあい",
-  //   romaji: "",
-  //   meaning: "người quen",
-  //   vn: "",
-  //   example: "知り合いに息子の就職を頼む",
-  //   exampleMeaning: "nhờ người quen tìm việc cho con trai",
-  //   audio: a10,
-  //   exampleAudio: ex10
-  // },
-  // {
-  //   kanji: "友人",
-  //   hira: "ゆうじん",
-  //   romaji: "yuujin",
-  //   meaning: "bạn thân",
-  //   vn: "Hữu nhân",
-  //   example: "田中さんを知っていますか。ええ、学生時代の友人です",
-  //   exampleMeaning: "bạn có biết anh Tanaka không ? Có, anh ấy là bạn thân thời học sinh của tôi",
-  //   audio: a11,
-  //   exampleAudio: ex11
-  // },
-  // {
-  //   kanji: "仲",
-  //   hira: "なか",
-  //   romaji: "",
-  //   meaning: "quan hệ",
-  //   vn: "Trọng",
-  //   example: "私は山本さんと仲がいい",
-  //   exampleMeaning: "tôi có quan hệ tốt với anh Yamada",
-  //   audio: a12,
-  //   exampleAudio: ex12
-  // },
-  // {
-  //   kanji: "生年月日",
-  //   hira: "せいねんがっび",
-  //   romaji: "",
-  //   meaning: "ngày sinh",
-  //   vn: "Sinh niên nhật nguyệt",
-  //   example: "書類に生年月日を記入する",
-  //   exampleMeaning: "điền ngày sinh vào giấy tờ",
-  //   audio: a13,
-  //   exampleAudio: ex13
-  // }
+  {
+    kanji: "高齢",
+    hira: "こうれい",
+    romaji: "kourei",
+    meaning: "tuổi cao",
+    vn: "Cao linh",
+    example: "祖母は高齢だが、まだとても元気だ",
+    exampleMeaning: "Bà tuổi đã cao nhưng vẫn rất khỏe",
+    audio: a3,
+    exampleAudio: ex3
+  },
+  {
+    kanji: "年上",
+    hira: "としうえ",
+    romaji: "toshiue",
+    meaning: "lớn tuổi",
+    vn: "Niên thượng",
+    example: "年上の友達",
+    exampleMeaning: "Bạn lớn tuổi hơn",
+    audio: a4,
+    exampleAudio: ex4
+  },
+  {
+    kanji: "目上",
+    hira: "めうえ",
+    romaji: "meue",
+    meaning: "cấp trên, bề trên, người trên",
+    vn: "Mục thượng",
+    example: "目上の人には敬語で話したほうがいい",
+    exampleMeaning: "nên dùng kính ngữ để nói chuyện với người bề trên",
+    audio: a5,
+    exampleAudio: ex5
+  },
+  {
+    kanji: "先輩",
+    hira: "せんぱい",
+    romaji: "senpai",
+    meaning: "Tiền bối, người đi trước",
+    vn: "Tiền bối",
+    example: "田中さんと私は同じ年だが、職場では彼のほうが先輩だ",
+    exampleMeaning: "anh Tanaka và tôi tuy cùng tuổi, nhưng tại nơi làm việc thì anh ấy là bậc tiền bối",
+    audio: a6,
+    exampleAudio: ex6
+  },
+  {
+    kanji: "後輩",
+    hira: "こうはい",
+    romaji: "",
+    meaning: "hậu bối, người đi sau",
+    vn: "",
+    example: "私はななみさんの２年後輩になりました",
+    exampleMeaning: "tôi là người vào sau chị Nanami 2 năm",
+    audio: a7,
+    exampleAudio: ex2
+  },
+  {
+    kanji: "上司",
+    hira: "じょうし",
+    romaji: "",
+    meaning: "cấp trên, ông chủ, bề trên",
+    vn: "",
+    example: "上司に相談してから決定する",
+    exampleMeaning: "bàn bạc với cấp trên rồi mới quyết định",
+    audio: a8,
+    exampleAudio: ex8
+  },
+  {
+    kanji: "相手",
+    hira: "あいて",
+    romaji: "",
+    meaning: "đối tác, đối phương, đối thủ, người đối diện",
+    vn: "",
+    example: "相手の目を見て話す",
+    exampleMeaning: "nhìn vào mắt đối phương mà nói chuyện",
+    audio: a9,
+    exampleAudio: ex9
+  },
+  {
+    kanji: "知り合い",
+    hira: "しりあい",
+    romaji: "",
+    meaning: "người quen",
+    vn: "",
+    example: "知り合いに息子の就職を頼む",
+    exampleMeaning: "nhờ người quen tìm việc cho con trai",
+    audio: a10,
+    exampleAudio: ex10
+  },
+  {
+    kanji: "友人",
+    hira: "ゆうじん",
+    romaji: "yuujin",
+    meaning: "bạn thân",
+    vn: "Hữu nhân",
+    example: "田中さんを知っていますか。ええ、学生時代の友人です",
+    exampleMeaning: "bạn có biết anh Tanaka không ? Có, anh ấy là bạn thân thời học sinh của tôi",
+    audio: a11,
+    exampleAudio: ex11
+  },
+  {
+    kanji: "仲",
+    hira: "なか",
+    romaji: "",
+    meaning: "quan hệ",
+    vn: "Trọng",
+    example: "私は山本さんと仲がいい",
+    exampleMeaning: "tôi có quan hệ tốt với anh Yamada",
+    audio: a12,
+    exampleAudio: ex12
+  },
+  {
+    kanji: "生年月日",
+    hira: "せいねんがっび",
+    romaji: "",
+    meaning: "ngày sinh",
+    vn: "Sinh niên nhật nguyệt",
+    example: "書類に生年月日を記入する",
+    exampleMeaning: "điền ngày sinh vào giấy tờ",
+    audio: a13,
+    exampleAudio: ex13
+  }
 ]
 export default data;
