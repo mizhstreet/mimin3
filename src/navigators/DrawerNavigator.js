@@ -25,7 +25,7 @@ const DrawerNavigator = createDrawerNavigator(
         backgroundColor: 'red'
       }
     },
-    initialRouteName: "HomeScreen"
+    initialRouteName: "SearchScreen"
   }
 )
 export default DrawerNavigator;

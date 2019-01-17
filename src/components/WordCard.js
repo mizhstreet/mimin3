@@ -27,6 +27,7 @@ export default class WordCard extends React.Component{
                 this.setState({
                   iconName: "favorite"
                 });
+                console.log(this.props.key);
               }}
               background={TouchableNativeFeedback.SelectableBackground()}>
                 <View style={styles.iconWrapper}>
@@ -85,14 +86,15 @@ const styles = StyleSheet.create({
     flex: 1,
     elevation: 5,
     borderColor: "gray",
-    marginTop: 10,
+    marginTop: 7,
     borderRadius: 10,
     padding: 15,
     marginHorizontal: 10,
     backgroundColor: "white",
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    marginBottom: 7
   },
   cardHeader: {
     flexWrap: 'wrap',

@@ -1,17 +1,85 @@
-import React from 'react';
-import {Text, ScrollView, Button, TouchableNativeFeedback, View} from 'react-native';
-export default class SearchScreen extends React.Component{
+import React from "react";
+import { MaterialIcons } from "@expo/vector-icons";
+import WordCard from '../components/WordCard';
+import data from "../data/Unit1";
+import {
+  TouchableNativeFeedback,
+  View,
+  TextInput,
+  StyleSheet,
+  FlatList
+} from "react-native";
+export default class SearchScreen extends React.Component {
+  state = {
+    query: "",
+    data: []
+  };
+  handleTextChange = text => {
+    this.setState({
+      data: data.filter(arr => {
+        return arr.romaji.toLowerCase().includes(text.toLowerCase());
+      })
+    });
+  };
+
   render() {
     return (
-      <ScrollView>
-        <TouchableNativeFeedback
-          onPress={() => alert("Save success")}
-          background={TouchableNativeFeedback.SelectableBackground()}>
+      <View style={styles.container}>
+        <View style={styles.searchBar}>
+          <TextInput
+            placeholder="Tìm gì đó ..."
+            style={styles.input}
+            onChangeText={text => {
+              this.handleTextChange(text);
+            }}
+          />
+          <TouchableNativeFeedback
+            onPress={() => alert("Save success")}
+            background={TouchableNativeFeedback.SelectableBackground()}
+          >
             <View>
-                <Text style={{fontSize: 20}}>Button</Text>
+              <MaterialIcons name="search" size={23} />
             </View>
-        </TouchableNativeFeedback>
-      </ScrollView>
+          </TouchableNativeFeedback>
+        </View>
+        <FlatList 
+          style={styles.list}
+          data={this.state.data}
+          renderItem={
+            ({item}) => (
+              <WordCard cardData={item}/>
+            )
+          }
+          keyExtractor={(_, index) => index.toString()}
+          overScrollMode="always"/>
+      </View>
     );
   }
 }
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: "#e57373",
+    flex: 1
+  },
+  searchBar: {
+    justifyContent: "space-between",
+    flexDirection: "row",
+    borderWidth: 2,
+    borderColor: "#e57373",
+    alignItems: "center",
+    height: 50,
+    borderRadius: 20,
+    paddingHorizontal: 20,
+    backgroundColor: "white",
+    marginHorizontal: 15,
+    marginVertical: 15
+  },
+  input: {
+    height: 40,
+    fontSize: 20
+  },
+  list: {
+    flex: 1,
+    paddingBottom: 30
+  }
+});

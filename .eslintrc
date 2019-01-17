@@ -1,0 +1,7 @@
+{
+    "plugins": [
+      "react-native",
+      "react"
+    ],
+    "extends": ["plugin:react-native/all"]
+  }
