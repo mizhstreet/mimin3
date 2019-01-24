@@ -3582,6 +3582,11 @@ lodash.pick@^4.4.0:
   resolved "https://registry.yarnpkg.com/lodash.pick/-/lodash.pick-4.4.0.tgz#52f05610fff9ded422611441ed1fc123a03001b3"
   integrity sha1-UvBWEP/53tQiYRRB7R/BI6AwAbM=
 
+lodash.pull@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/lodash.pull/-/lodash.pull-4.1.0.tgz#60060cc6bd625b4d4567ec27dc45cd1be9eec012"
+  integrity sha1-YAYMxr1iW01FZ+wn3EXNG+nuwBI=
+
 lodash.throttle@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
@@ -4693,11 +4698,6 @@ react-native-branch@2.2.5:
   resolved "https://registry.yarnpkg.com/react-native-branch/-/react-native-branch-2.2.5.tgz#4074dd63b4973e6397d9ce50e97b57c77a518e9d"
   integrity sha1-QHTdY7SXPmOX2c5Q6XtXx3pRjp0=
 
-react-native-furi@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/react-native-furi/-/react-native-furi-0.0.1.tgz#be18a864705745004bfbf84ec0bb90e36f4ac713"
-  integrity sha512-ZKqCpozCtPDAYNOSGyJml3+zgRQMHt9pX6z257dAATMXeBhl4N5bQDVX/19QHkhhCp5tH9zBDTwtokreJLVpQg==
-
 react-native-gesture-handler@1.0.9:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-1.0.9.tgz#ddec4d19d51cb6fb54df6eca792ebd76aaef083f"
@@ -4715,6 +4715,13 @@ react-native-gesture-handler@^1.0.0:
     hoist-non-react-statics "^2.3.1"
     invariant "^2.2.2"
     prop-types "^15.5.10"
+
+react-native-loading-spinner-overlay@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/react-native-loading-spinner-overlay/-/react-native-loading-spinner-overlay-1.0.1.tgz#07f85a072b6f7d05b8749668cd626df4cc330347"
+  integrity sha512-njZZWs+cgyq6Ni7tkYEowMmuAuHVljuH4CqTWA0plNOfSzZhEcrW209y7WcgHjRWz0RvvEYF5oWGT8DWtTq8bA==
+  dependencies:
+    prop-types "^15.6.2"
 
 react-native-maps@expo/react-native-maps#v0.22.1-exp.0:
   version "0.22.1"
@@ -4770,11 +4777,6 @@ react-native-screens@1.0.0-alpha.15:
   version "1.0.0-alpha.19"
   resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-1.0.0-alpha.19.tgz#ecf3c9023e169b7013266d40b9c5599f37667f6d"
   integrity sha512-+a7GdwzLWYWYVUJMg+XuyBoRFGD8GdGyBfebuTNBY+xwUZpTXCaK/GlLGL6EE3h0iBHZu83do7zViEailWRNyA==
-
-react-native-status-bar-height@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/react-native-status-bar-height/-/react-native-status-bar-height-2.2.0.tgz#3bd51de134660efc5f5ad136ca573c7d5790f7ed"
-  integrity sha512-4WJpyZirzeMHyZiyNEy4LnSPOtuLRVy3+28Rhz7ffrjCVcc5RFcC0HVjFnkwfuhcTyXIDtzPG6canJkXzbTtBA==
 
 react-native-svg@8.0.8:
   version "8.0.8"

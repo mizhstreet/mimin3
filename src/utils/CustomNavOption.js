@@ -1,5 +1,4 @@
 import React from 'react';
-import {TouchableNativeFeedback, View, StyleSheet} from 'react-native';
 import {createStackNavigator} from 'react-navigation';
 import {MaterialIcons} from '@expo/vector-icons';
 import {MaterialHeaderButtons, Item} from '../custom-components/HeaderButton';
@@ -12,11 +11,14 @@ const CustomNavOption = (routeName, screen, iconName, drawerLabel, title) => {
           title,
           headerStyle: {
             backgroundColor: "#e57373",
-            elevation: 0
+            elevation: 0           
+          },
+          headerTitleStyle: {
+            color: "white"
           },
           headerLeft: (
             <MaterialHeaderButtons>
-              <Item title="add" iconName="menu" onPress={() => props.navigation.openDrawer()} />
+              <Item buttonStyle={{color: "white"}} title="add" iconName="menu" onPress={() => props.navigation.openDrawer()} />
             </MaterialHeaderButtons>
           ),
         })

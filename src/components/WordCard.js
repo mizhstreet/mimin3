@@ -1,16 +1,45 @@
-import React from 'react';
-import {Subscribe} from 'unstated';
-import {View, Text, StyleSheet, TouchableNativeFeedback, TouchableWithoutFeedback} from 'react-native';
-import {MaterialIcons} from '@expo/vector-icons';
-import WordSoundContainer from '../state-containers/WordSoundContainer';
-import ModalStateContainer from '../state-containers/ModalStateContainer';
-export default class WordCard extends React.Component{
+import React from "react";
+import { Subscribe } from "unstated";
+import {
+  View,
+  Text,
+  StyleSheet,
+  TouchableNativeFeedback,
+  AsyncStorage
+} from "react-native";
+import { MaterialIcons } from "@expo/vector-icons";
+import WordSoundContainer from "../state-containers/WordSoundContainer";
+import ModalStateContainer from "../state-containers/ModalStateContainer";
+import FavoriteWordContainer from "../state-containers/FavoriteWordContainer";
+import WordStateContainer from '../state-containers/WordStateContainer';
+export default class WordCard extends React.Component {
   state = {
     iconName: "favorite-border"
-  }
-  render(){
-    const {audio, kanji, hira, exampleAudio, vn, meaning, example, exampleMeaning} = this.props.cardData;
-    return(
+  };
+  setFavoriteData = async newData => {
+    const defaultData = await AsyncStorage.getItem("data");
+    let data;
+    if (defaultData) {
+      data = JSON.parse(defaultData);
+    } else {
+      data = [];
+    }
+    data.push(newData);
+    await AsyncStorage.setItem("data", JSON.stringify(data));
+  };
+
+  render() {
+    const {
+      audio,
+      kanji,
+      hira,
+      exampleAudio,
+      vn,
+      meaning,
+      example,
+      exampleMeaning
+    } = this.props.cardData;
+    return (
       <View style={styles.card}>
         <View style={styles.cardContent}>
           <View style={styles.cardHeader}>
@@ -22,23 +51,27 @@ export default class WordCard extends React.Component{
         </View>
         <View style={styles.cardButton}>
           <View style={styles.buttonWrapper}>
-            <TouchableNativeFeedback
-              onPress={() => {
-                this.setState({
-                  iconName: "favorite"
-                });
-                console.log(this.props.key);
+            <Subscribe to={[WordStateContainer]}>
+              {container => {
+                return (
+                  <TouchableNativeFeedback
+                    onPress={async () => {
+                      await container.handleFavorite(this.props.index);                      
+                    }}
+                    background={TouchableNativeFeedback.SelectableBackground()}
+                  >
+                    <View style={styles.iconWrapper}>
+                      <MaterialIcons name={this.props.cardData.favorite ? "favorite" : "favorite-border"} size={23} />
+                    </View>
+                  </TouchableNativeFeedback>
+                );
               }}
-              background={TouchableNativeFeedback.SelectableBackground()}>
-                <View style={styles.iconWrapper}>
-                    <MaterialIcons name={this.state.iconName} size={23} />
-                </View>
-            </TouchableNativeFeedback>
+            </Subscribe>
           </View>
           <View style={styles.buttonWrapper}>
             <Subscribe to={[ModalStateContainer]}>
-              {
-                (modalData) => <TouchableNativeFeedback
+              {modalData => (
+                <TouchableNativeFeedback
                   onPress={async () => {
                     await modalData.setData({
                       kanji,
@@ -51,34 +84,34 @@ export default class WordCard extends React.Component{
                     });
                     await modalData.handleVisible();
                   }}
-                  background={TouchableNativeFeedback.SelectableBackground()}>
-                    <View style={styles.iconWrapper}>
-                        <MaterialIcons name="menu" size={23} />
-                    </View>
+                  background={TouchableNativeFeedback.SelectableBackground()}
+                >
+                  <View style={styles.iconWrapper}>
+                    <MaterialIcons name="menu" size={23} />
+                  </View>
                 </TouchableNativeFeedback>
-              }
+              )}
             </Subscribe>
           </View>
           <View style={styles.buttonWrapper}>
             <Subscribe to={[WordSoundContainer]}>
-              {
-                (player) => (
-                  <TouchableNativeFeedback
-                    onPress={async () => {
-                      await player.loadSound(audio);
-                    }}
-                    background={TouchableNativeFeedback.SelectableBackground()}>
-                      <View style={styles.iconWrapper}>
-                          <MaterialIcons name="volume-up" size={23} />
-                      </View>
-                  </TouchableNativeFeedback>
-                )
-              }
+              {player => (
+                <TouchableNativeFeedback
+                  onPress={async () => {
+                    await player.loadSound(audio);
+                  }}
+                  background={TouchableNativeFeedback.SelectableBackground()}
+                >
+                  <View style={styles.iconWrapper}>
+                    <MaterialIcons name="volume-up" size={23} />
+                  </View>
+                </TouchableNativeFeedback>
+              )}
             </Subscribe>
           </View>
         </View>
       </View>
-    )
+    );
   }
 }
 const styles = StyleSheet.create({
@@ -91,30 +124,30 @@ const styles = StyleSheet.create({
     padding: 15,
     marginHorizontal: 10,
     backgroundColor: "white",
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
     marginBottom: 7
   },
   cardHeader: {
-    flexWrap: 'wrap',
-    alignItems: 'flex-start',
-    flexDirection:'row'
+    flexWrap: "wrap",
+    alignItems: "flex-start",
+    flexDirection: "row"
   },
-  cardContent:{
-    overflow: 'hidden',
+  cardContent: {
+    overflow: "hidden",
     flex: 1
   },
-  kanji:{
-    fontWeight: '700',
+  kanji: {
+    fontWeight: "700",
     fontSize: 22,
-    alignSelf: 'center',
-    marginRight: 20,
+    alignSelf: "center",
+    marginRight: 20
   },
   vn: {
-    fontWeight: '700',
+    fontWeight: "700",
     fontSize: 15,
-    alignSelf: 'center'
+    alignSelf: "center"
   },
   hira: {
     fontSize: 18,
@@ -132,7 +165,7 @@ const styles = StyleSheet.create({
     borderColor: "red",
     height: 30,
     width: 30,
-    justifyContent: 'center',
-    alignItems: 'center'
+    justifyContent: "center",
+    alignItems: "center"
   }
-})
+});

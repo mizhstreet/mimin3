@@ -16,7 +16,7 @@ class Modal extends React.Component{
     return (
       <Subscribe to={[ModalStateContainer, WordSoundContainer]}>
         {
-          ({state: {kanji, hira, meaning, example, exampleMeaning, exampleAudio, visible}, handleVisible}, player) => (
+          ({state: {kanji, meaning, example, exampleMeaning, exampleAudio, visible}, handleVisible}, player) => (
             <View>
               <Dialog visible={visible} onTouchOutside={handleVisible} dialogStyle={styles.dialogWrapper} dialogAnimation={new ScaleAnimation()}>
                 <DialogContent style={styles.dialogContent}>
