@@ -1,15 +1,13 @@
 import React from 'react';
-import {View, ScrollView, StyleSheet, Text} from 'react-native';
+import {View, ScrollView, StyleSheet, Image} from 'react-native';
 import {DrawerItems, SafeAreaView} from 'react-navigation';
-import {MaterialIcons} from '@expo/vector-icons';
+import background from '../assets/images/maxresdefault.jpg';
 const DrawerContent = (props) => {
   return(
     <ScrollView>
       <SafeAreaView>
         <View style={styles.drawerHeader}>
-          <View style={styles.avatar}>
-            <MaterialIcons size={30} name="mood" />
-          </View>
+          <Image style={styles.image} source={background} />
         </View>
         <DrawerItems {...props} />
       </SafeAreaView>
@@ -30,6 +28,11 @@ const styles = StyleSheet.create({
     backgroundColor: "red",
     marginBottom: 25,
     marginLeft: 15
+  },
+  image: {
+    resizeMode: 'cover',
+    width: '100%',
+    height: '100%'
   }
 })
 export default DrawerContent;
