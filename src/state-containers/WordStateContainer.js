@@ -24,7 +24,13 @@ class WordStateContainer extends Container {
     }
     await this.setState({ favoriteDataLoaded: true });
   };
-
+  removeFavorite = (index) => {
+    const favoriteData = this.state.favoriteData;
+    favoriteData.splice(0,1);
+    // console.log(favoriteData);
+    this.setState({favoriteData});
+  }
+  
   handleFavorite = async index => {
     try {
       const defaultDataIndexes = await AsyncStorage.getItem(

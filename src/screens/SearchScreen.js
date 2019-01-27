@@ -1,6 +1,6 @@
 import React from "react";
 import { MaterialIcons } from "@expo/vector-icons";
-import WordCard from '../components/WordCard';
+import WordCard from "../components/WordCard";
 import data from "../data/Unit1";
 import {
   TouchableNativeFeedback,
@@ -42,16 +42,15 @@ export default class SearchScreen extends React.Component {
             </View>
           </TouchableNativeFeedback>
         </View>
-        <FlatList 
+        <FlatList
           style={styles.list}
           data={this.state.data}
-          renderItem={
-            ({item}) => (
-              <WordCard cardData={item}/>
-            )
-          }
+          renderItem={({ item }) => (
+            <WordCard cardData={item} index={item.id} />
+          )}
           keyExtractor={(_, index) => index.toString()}
-          overScrollMode="always"/>
+          overScrollMode="always"
+        />
       </View>
     );
   }

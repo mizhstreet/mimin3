@@ -4,16 +4,36 @@ import {
   View,
   Text,
   StyleSheet,
-  TouchableNativeFeedback
+  TouchableNativeFeedback,
+  Animated
 } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 import WordSoundContainer from "../state-containers/WordSoundContainer";
 import ModalStateContainer from "../state-containers/ModalStateContainer";
-import WordStateContainer from '../state-containers/WordStateContainer';
-export default class WordCard extends React.PureComponent {
-  state = {
-    iconName: "favorite-border"
+import WordStateContainer from "../state-containers/WordStateContainer";
+const ANIMATION_DURATION = 250;
+
+export default class AnimatedWordCard extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this._animated = new Animated.Value(0);
+  }
+
+  componentDidMount() {
+    Animated.timing(this._animated, {
+      toValue: 1,
+      duration: ANIMATION_DURATION,
+    }).start();
+  }
+
+  onRemove = () => {
+    Animated.timing(this._animated, {
+      toValue: 0,
+      duration: ANIMATION_DURATION,
+    }).start();
   };
+  
   render() {
     const {
       audio,
@@ -25,8 +45,24 @@ export default class WordCard extends React.PureComponent {
       example,
       exampleMeaning
     } = this.props.cardData;
+    const cardStyle = [
+      styles.card,
+      { opacity: this._animated },
+      // {
+      //   transform: [
+      //     { scale: this.state._animated },
+      //     {
+      //       rotate: this.state._animated.interpolate({
+      //         inputRange: [0, 1],
+      //         outputRange: ["35deg", "0deg"],
+      //         extrapolate: "clamp"
+      //       })
+      //     }
+      //   ]
+      // }
+    ];
     return (
-      <View style={styles.card}>
+      <Animated.View style={cardStyle}>
         <View style={styles.cardContent}>
           <View style={styles.cardHeader}>
             <Text style={styles.kanji}>{kanji}</Text>
@@ -42,12 +78,21 @@ export default class WordCard extends React.PureComponent {
                 return (
                   <TouchableNativeFeedback
                     onPress={async () => {
-                      await container.handleFavorite(this.props.index);                      
+                      // await container.removeFavorite(this.props.index);
+                      await this.onRemove();
+                      await container.handleFavorite(this.props.index);
                     }}
-                    background={TouchableNativeFeedback.SelectableBackground()}
+                    background={TouchacardStylebleNativeFeedback.SelectableBackground()}
                   >
                     <View style={styles.iconWrapper}>
-                      <MaterialIcons name={this.props.cardData.favorite ? "favorite" : "favorite-border"} size={23} />
+                      <MaterialIcons
+                        name={
+                          this.props.cardData.favorite
+                            ? "favorite"
+                            : "favorite-border"
+                        }
+                        size={23}
+                      />
                     </View>
                   </TouchableNativeFeedback>
                 );
@@ -96,7 +141,7 @@ export default class WordCard extends React.PureComponent {
             </Subscribe>
           </View>
         </View>
-      </View>
+      </Animated.View>
     );
   }
 }

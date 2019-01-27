@@ -13,8 +13,8 @@ const DrawerNavigator = createDrawerNavigator(
   {
     SearchScreen: CustomNavOption("SearchScreen",SearchScreen, "search", "Tìm kiếm","Tìm kiếm"),
     FavoriteScreen: CustomNavOption("FavoriteScreen",FavoriteScreen, "favorite", "Từ vựng yêu thích","Từ vựng yêu thích"),
-    UnitOneScreen: CustomNavOption("UnitOneScreen",UnitScreen(0,6), "book", "Unit 1","Unit 1"),
-    UnitTwoScreen: CustomNavOption("UnitTwoScreen",UnitScreen(6,11), "book", "Unit 2","Unit 2")
+    UnitOneScreen: CustomNavOption("UnitOneScreen",UnitScreen(0,2), "book", "Unit 1","Unit 1"),
+    UnitTwoScreen: CustomNavOption("UnitTwoScreen",UnitScreen(6,70), "book", "Unit 2","Unit 2")
   },
   {
     contentComponent: DrawerContent,

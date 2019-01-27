@@ -1,6 +1,7 @@
 import React from "react";
-import { FlatList } from "react-native";
+import { FlatList, View, Animated } from "react-native";
 import { Subscribe } from "unstated";
+import {OptimizedFlatList} from 'react-native-optimized-flatlist';
 import Spinner from "react-native-loading-spinner-overlay";
 import WordCard from "../components/WordCard";
 import Modal from "../components/Modal";
@@ -14,16 +15,19 @@ export const UnitScreen = (indexStart, indexEnd) => {
             if (container.state.favoriteDataLoaded) {
               return (
                 <React.Fragment>
+                  <Modal />
                   <FlatList
                     style={{ backgroundColor: "#e57373" }}
                     data={container.state.data.slice(indexStart,indexEnd)}
                     renderItem={({ item }) => (
-                      <WordCard cardData={item} index={item.audio - 1} />
+                      <WordCard cardData={item} index={item.id} />
                     )}
+                    removeClippedSubviews 
+                    disableVirtualization
                     keyExtractor={(_, index) => index.toString()}
                     overScrollMode="always"
                   />
-                  <Modal />
+                  
                 </React.Fragment>
               );
             } else {
