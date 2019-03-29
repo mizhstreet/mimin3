@@ -1,105 +1,13 @@
 import React from "react";
 import { Subscribe } from "unstated";
 import {
-  View,
-  Text,
-  StyleSheet,
-  TouchableNativeFeedback
+ View, Text, StyleSheet, TouchableNativeFeedback 
 } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 import WordSoundContainer from "../state-containers/WordSoundContainer";
 import ModalStateContainer from "../state-containers/ModalStateContainer";
-import WordStateContainer from '../state-containers/WordStateContainer';
-export default class WordCard extends React.PureComponent {
-  state = {
-    iconName: "favorite-border"
-  };
-  render() {
-    const {
-      audio,
-      kanji,
-      hira,
-      exampleAudio,
-      vn,
-      meaning,
-      example,
-      exampleMeaning
-    } = this.props.cardData;
-    return (
-      <View style={styles.card}>
-        <View style={styles.cardContent}>
-          <View style={styles.cardHeader}>
-            <Text style={styles.kanji}>{kanji}</Text>
-            <Text style={styles.vn}>{vn}</Text>
-          </View>
-          <Text style={styles.hira}>{hira}</Text>
-          <Text style={styles.hira}>{meaning}</Text>
-        </View>
-        <View style={styles.cardButton}>
-          <View style={styles.buttonWrapper}>
-            <Subscribe to={[WordStateContainer]}>
-              {container => {
-                return (
-                  <TouchableNativeFeedback
-                    onPress={async () => {
-                      await container.handleFavorite(this.props.index);                      
-                    }}
-                    background={TouchableNativeFeedback.SelectableBackground()}
-                  >
-                    <View style={styles.iconWrapper}>
-                      <MaterialIcons name={this.props.cardData.favorite ? "favorite" : "favorite-border"} size={23} />
-                    </View>
-                  </TouchableNativeFeedback>
-                );
-              }}
-            </Subscribe>
-          </View>
-          <View style={styles.buttonWrapper}>
-            <Subscribe to={[ModalStateContainer]}>
-              {modalData => (
-                <TouchableNativeFeedback
-                  onPress={async () => {
-                    await modalData.setData({
-                      kanji,
-                      hira,
-                      meaning,
-                      vn,
-                      example,
-                      exampleMeaning,
-                      exampleAudio
-                    });
-                    await modalData.handleVisible();
-                  }}
-                  background={TouchableNativeFeedback.SelectableBackground()}
-                >
-                  <View style={styles.iconWrapper}>
-                    <MaterialIcons name="menu" size={23} />
-                  </View>
-                </TouchableNativeFeedback>
-              )}
-            </Subscribe>
-          </View>
-          <View style={styles.buttonWrapper}>
-            <Subscribe to={[WordSoundContainer]}>
-              {player => (
-                <TouchableNativeFeedback
-                  onPress={async () => {
-                    await player.loadSound(audio);
-                  }}
-                  background={TouchableNativeFeedback.SelectableBackground()}
-                >
-                  <View style={styles.iconWrapper}>
-                    <MaterialIcons name="volume-up" size={23} />
-                  </View>
-                </TouchableNativeFeedback>
-              )}
-            </Subscribe>
-          </View>
-        </View>
-      </View>
-    );
-  }
-}
+import WordStateContainer from "../state-containers/WordStateContainer";
+
 const styles = StyleSheet.create({
   card: {
     flex: 1,
@@ -155,3 +63,96 @@ const styles = StyleSheet.create({
     alignItems: "center"
   }
 });
+
+export default class WordCard extends React.PureComponent {
+  render() {
+    const {
+      audio,
+      kanji,
+      hira,
+      exampleAudio,
+      vn,
+      meaning,
+      example,
+      exampleMeaning
+    } = this.props.cardData;
+    return (
+      <View style={styles.card}>
+        <View style={styles.cardContent}>
+          <View style={styles.cardHeader}>
+            <Text style={styles.kanji}>{kanji}</Text>
+            <Text style={styles.vn}>{vn}</Text>
+          </View>
+          <Text style={styles.hira}>{hira}</Text>
+          <Text style={styles.hira}>{meaning}</Text>
+        </View>
+        <View style={styles.cardButton}>
+          <View style={styles.buttonWrapper}>
+            <Subscribe to={[WordStateContainer]}>
+              {container => (
+                <TouchableNativeFeedback
+                  onPress={async () => {
+                    await container.handleFavorite(this.props.index);
+                  }}
+                  background={TouchableNativeFeedback.SelectableBackground()}
+                >
+                  <View style={styles.iconWrapper}>
+                    <MaterialIcons
+                      name={
+                        this.props.cardData.favorite
+                          ? "favorite"
+                          : "favorite-border"
+                      }
+                      size={23}
+                    />
+                  </View>
+                </TouchableNativeFeedback>
+              )}
+            </Subscribe>
+          </View>
+          <View style={styles.buttonWrapper}>
+            <Subscribe to={[ModalStateContainer]}>
+              {modalData => (
+                <TouchableNativeFeedback
+                  onPress={async () => {
+                    await modalData.setData({
+                      kanji,
+                      hira,
+                      meaning,
+                      vn,
+                      example,
+                      exampleMeaning,
+                      exampleAudio
+                    });
+                    await modalData.handleVisible();
+                  }}
+                  background={TouchableNativeFeedback.SelectableBackground()}
+                >
+                  <View style={styles.iconWrapper}>
+                    <MaterialIcons name="menu" size={23} />
+                  </View>
+                </TouchableNativeFeedback>
+              )}
+            </Subscribe>
+          </View>
+          <View style={styles.buttonWrapper}>
+            <Subscribe to={[WordSoundContainer]}>
+              {player => (
+                <TouchableNativeFeedback
+                  onPress={async () => {
+                    await player.loadSound(audio);
+                  }}
+                  background={TouchableNativeFeedback.SelectableBackground()}
+                >
+                  <View style={styles.iconWrapper}>
+                    <MaterialIcons name="volume-up" size={23} />
+                  </View>
+                </TouchableNativeFeedback>
+              )}
+            </Subscribe>
+          </View>
+        </View>
+      </View>
+    );
+  }
+}

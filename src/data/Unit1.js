@@ -615,1292 +615,1292 @@ const data = [
     exampleMeaning: "suy nghĩ về việc học tiếp lên cao của bọn trẻ",
     audio: a21,
     exampleAudio: ex21
-  },
-
-  {
-    id: 21,
-    kanji: "退学",
-    hira: "たいがく",
-    romaji: "taigaku",
-    meaning: "bỏ học , nghỉ học",
-    vn: "",
-    example: "退学の理由を説明する",
-    exampleMeaning: "giải thích lý do bỏ học",
-    audio: a22,
-    exampleAudio: ex22
-  },
-
-  {
-    id: 22,
-    kanji: "就職",
-    hira: "しゅうしょく",
-    romaji: "shuushoku",
-    meaning: "công ăn việc làm",
-    vn: "Tại chức",
-    example: "旅行会社に就職する",
-    exampleMeaning: "làm việc tại công ty du lịch",
-    audio: a23,
-    exampleAudio: ex23
-  },
-
-  {
-    id: 23,
-    kanji: "退職",
-    hira: "たいしょく",
-    romaji: "taishoku",
-    meaning: "bỏ việc, nghỉ việc",
-    vn: "Thoái chức",
-    example: "母の介護のため、退職を決めた",
-    exampleMeaning: "vì chăm sóc mẹ nên tôi quyết định nghỉ việc",
-    audio: a24,
-    exampleAudio: ex24
-  },
-
-  {
-    id: 24,
-    kanji: "失業",
-    hira: "しつぎょう",
-    romaji: "shitsugyou",
-    meaning: "thất nghiệp, không có việc làm",
-    vn: "Thất nghiệp",
-    example: "会社が倒産して失業した",
-    exampleMeaning: "tôi thất nghiệp vì công ty đã phá sản",
-    audio: a25,
-    exampleAudio: ex25
-  },
-
-  {
-    id: 25,
-    kanji: "残業",
-    hira: "ざんぎょう",
-    romaji: "zangyou",
-    meaning: "làm thêm, làm quá giờ",
-    vn: "Tàn nghiệp",
-    example: "残業が多くて疲れた",
-    exampleMeaning: "mệt vì làm thêm nhiều",
-    audio: a26,
-    exampleAudio: ex26
-  },
-
-  {
-    id: 26,
-    kanji: "生活",
-    hira: "せいかつ",
-    romaji: "seikatsu",
-    meaning: "sinh hoạt, cuộc sống",
-    vn: "",
-    example: "健康的な生活を送る",
-    exampleMeaning: "sống một cuộc sống khỏe mạnh",
-    audio: a27,
-    exampleAudio: ex27
-  },
-
-  {
-    id: 27,
-    kanji: "通勤",
-    hira: "つうきん",
-    romaji: "tsukin",
-    meaning: "đi làm",
-    vn: "",
-    example: "私は毎日一時間かけて通勤している",
-    exampleMeaning: "mỗi ngày tôi mất 1 tiếng đi đến chỗ làm",
-    audio: a28,
-    exampleAudio: ex28
-  },
-
-  {
-    id: 28,
-    kanji: "学歴",
-    hira: "がくれき",
-    romaji: "gakureki",
-    meaning: "bằng cấp, quá trình học",
-    vn: "",
-    example: "学歴が高くても、実力があるかどうかわからない",
-    exampleMeaning: "dù bằng cấp có cao, cũng không biết có thực lực hay không",
-    audio: a29,
-    exampleAudio: ex29
-  },
-
-  {
-    id: 29,
-    kanji: "給料",
-    hira: "きゅうりょう",
-    romaji: "kyuuryou",
-    meaning: "lương",
-    vn: "",
-    example: "会社から給料をもらう",
-    exampleMeaning: "nhận lương từ công ty",
-    audio: a30,
-    exampleAudio: ex30
-  },
-
-  {
-    id: 30,
-    kanji: "面接",
-    hira: "めんせつ",
-    romaji: "mensetsu",
-    meaning: "phỏng vấn, thi vấn đáp",
-    vn: "",
-    example: "今日会社の人との面接がある",
-    exampleMeaning: "hôm nay có phỏng vấn với người của công ty",
-    audio: a31,
-    exampleAudio: ex31
-  },
-
-  {
-    id: 31,
-    kanji: "休憩",
-    hira: "きゅうけい",
-    romaji: "kyuukei",
-    meaning: "nghỉ giải lao",
-    vn: "",
-    example: "ではここで、１０分間の休憩です",
-    exampleMeaning: "vậy thì chúng ta sẽ nghỉ 10 phút tại đây",
-    audio: a32,
-    exampleAudio: ex32
-  },
-
-  {
-    id: 32,
-    kanji: "観光",
-    hira: "かんこう",
-    romaji: "kankou",
-    meaning: "tham quan, du lịch",
-    vn: "",
-    example: "来日の目的は観光です",
-    exampleMeaning: "mục đích đến Nhật là đi du lịch",
-    audio: a33,
-    exampleAudio: ex33
-  },
-
-  {
-    id: 33,
-    kanji: "帰国",
-    hira: "きこく",
-    romaji: "kikoku",
-    meaning: "về nước",
-    vn: "",
-    example: "今度の正月には帰国するつもりです",
-    exampleMeaning: "tết này tôi định về nước",
-    audio: a34,
-    exampleAudio: ex34
-  },
-
-  {
-    id: 34,
-    kanji: "帰省",
-    hira: "きせい",
-    romaji: "kisei",
-    meaning: "về quê",
-    vn: "",
-    example: "お盆にはふるさとに帰省する日本人が多い",
-    exampleMeaning: "vào lễ hội Bon có nhiều người Nhật về quê",
-    audio: a35,
-    exampleAudio: ex35
-  },
-
-  {
-    id: 35,
-    kanji: "帰宅",
-    hira: "きたく",
-    romaji: "kitaku",
-    meaning: "về nhà",
-    vn: "",
-    example: "毎日忙くて帰宅が遅い",
-    exampleMeaning: "vì công việc bận rộn nên ngày nào cũng về nhà muộn",
-    audio: a36,
-    exampleAudio: ex36
-  },
-
-  {
-    id: 36,
-    kanji: "参加",
-    hira: "さんか",
-    romaji: "sanka",
-    meaning: "tham gia, tham dự",
-    vn: "",
-    example: "ボランティア活動に参加する",
-    exampleMeaning: "tham gia hoạt động tình nguyện",
-    audio: a37,
-    exampleAudio: ex37
-  },
-
-  {
-    id: 37,
-    kanji: "出席",
-    hira: "しゅっせき",
-    romaji: "shusseki",
-    meaning: "có mặt, tham dự",
-    vn: "",
-    example: "ミーテイング に出席する",
-    exampleMeaning: "tham dự cuộc họp",
-    audio: a38,
-    exampleAudio: ex38
-  },
-
-  {
-    id: 38,
-    kanji: "欠席",
-    hira: "けっせき",
-    romaji: "kesseki",
-    meaning: "vắng mặt, không tham dự",
-    vn: "",
-    example: "高橋さん今度の同窓会は欠席するそうだ",
-    exampleMeaning: "hình như lần họp lớp này anh Takahashi sẽ vắng mặt",
-    audio: a39,
-    exampleAudio: ex39
-  },
-
-  {
-    id: 39,
-    kanji: "遅刻",
-    hira: "ちこく",
-    romaji: "chikoku",
-    meaning: "muộn",
-    vn: "",
-    example: "寝坊して授業に遅刻する",
-    exampleMeaning: "vì ngủ quên nên muộn giờ học",
-    audio: a40,
-    exampleAudio: ex40
-  },
-
-  {
-    id: 40,
-    kanji: "化粧",
-    hira: "けしょう",
-    romaji: "keshou",
-    meaning: "trang điểm, hóa trang",
-    vn: "",
-    example: "あなたは毎日、お化粧に何分ぐらいかけていますか",
-    exampleMeaning: "mỗi ngày bạn dành mấy phút để trang điểm",
-    audio: a41,
-    exampleAudio: ex41
-  },
-
-  {
-    id: 41,
-    kanji: "計算",
-    hira: "けいさん",
-    romaji: "keisan",
-    meaning: "tính toán",
-    vn: "",
-    example: "私は計算が苦手だ",
-    exampleMeaning: "tôi kém tính toán",
-    audio: a42,
-    exampleAudio: ex42
-  },
-
-  {
-    id: 42,
-    kanji: "計画",
-    hira: "けいかく",
-    romaji: "keikaku",
-    meaning: "kế hoạch",
-    vn: "",
-    example: "来年の計画を立てる",
-    exampleMeaning: "lập kế hoạch cho năm sau",
-    audio: a43,
-    exampleAudio: ex43
-  },
-
-  {
-    id: 43,
-    kanji: "成功",
-    hira: "せいこう",
-    romaji: "seikou",
-    meaning: "thành công",
-    vn: "",
-    example: "実験に成功する",
-    exampleMeaning: "thí nghiệm thành công",
-    audio: a44,
-    exampleAudio: ex44
-  },
-
-  {
-    id: 44,
-    kanji: "失敗",
-    hira: "しっぱい",
-    romaji: "shippai",
-    meaning: "thất bại",
-    vn: "",
-    example: "失敗は成功のもと",
-    exampleMeaning: "Thất bại là mẹ của thành công",
-    audio: a45,
-    exampleAudio: ex45
-  },
-
-  {
-    id: 45,
-    kanji: "準備",
-    hira: "じゅんび",
-    romaji: "junbi",
-    meaning: "chuẩn bị",
-    vn: "",
-    example: "引っ越しの準備がおわった",
-    exampleMeaning: "việc chuẩn bị chuyển nhà đã xong",
-    audio: a46,
-    exampleAudio: ex46
-  },
-
-  {
-    id: 46,
-    kanji: "整理",
-    hira: "せいり",
-    romaji: "seiri",
-    meaning: "chỉnh sửa, thu dọn, sửa",
-    vn: "",
-    example: "資料の整理",
-    exampleMeaning: "chỉnh sửa tài liệu",
-    audio: a47,
-    exampleAudio: ex47
-  },
-
-  {
-    id: 47,
-    kanji: "注文",
-    hira: "ちゅうもん",
-    romaji: "chuumon",
-    meaning: "gọi món, đặt hàng",
-    vn: "",
-    example: "喫茶店コーヒー を注文する",
-    exampleMeaning: "tôi gọi cafe ở quán giải khát",
-    audio: a48,
-    exampleAudio: ex48
-  },
-
-  {
-    id: 48,
-    kanji: "貯金",
-    hira: "ちょきん",
-    romaji: "chokin",
-    meaning: "tiết kiệm tiền, tiền tiết kiệm",
-    vn: "",
-    example: "貯金が増える",
-    exampleMeaning: "tiền tiết kiệm tăng",
-    audio: a49,
-    exampleAudio: ex49
-  },
-
-  {
-    id: 49,
-    kanji: "徹夜",
-    hira: "てつや",
-    romaji: "tetsuya",
-    meaning: "thức trắng đêm",
-    vn: "",
-    example: "徹夜で勉強する",
-    exampleMeaning: "thức đêm học bài",
-    audio: a50,
-    exampleAudio: ex50
-  },
-
-  {
-    id: 50,
-    kanji: "引っ越し",
-    hira: "ひっこし",
-    romaji: "hikkoshi",
-    meaning: "chuyển nhà",
-    vn: "",
-    example: "引っ越しを手伝う",
-    exampleMeaning: "giúp đỡ việc chuyển nhà",
-    audio: a51,
-    exampleAudio: ex51
-  },
-
-  {
-    id: 51,
-    kanji: "身長",
-    hira: "しんちょう",
-    romaji: "shinchou",
-    meaning: "chiều cao, tầm vóc",
-    vn: "",
-    example: "身長を測る",
-    exampleMeaning: "đo chiều cao",
-    audio: a52,
-    exampleAudio: ex52
-  },
-
-  {
-    id: 52,
-    kanji: "体重",
-    hira: "たいじゅう",
-    romaji: "taijou",
-    meaning: "trọng lượng",
-    vn: "",
-    example: "体重を測る",
-    exampleMeaning: "đo trọng lượng",
-    audio: a53,
-    exampleAudio: ex53
-  },
-
-  {
-    id: 53,
-    kanji: "怪我",
-    hira: "けが",
-    romaji: "kega",
-    meaning: "vết thương",
-    vn: "",
-    example: "小さなけが",
-    exampleMeaning: "vét thương nhỏ",
-    audio: a54,
-    exampleAudio: ex54
-  },
-
-  {
-    id: 54,
-    kanji: "会",
-    hira: "かい",
-    romaji: "kai",
-    meaning: "hội",
-    vn: "",
-    example: "忘年会を開く",
-    exampleMeaning: "Tổ chức tiệc cuối năm",
-    audio: a55,
-    exampleAudio: ex55
-  },
-
-  {
-    id: 55,
-    kanji: "趣味",
-    hira: "しゅみ",
-    romaji: "shumi",
-    meaning: "sở thích, yêu thích",
-    vn: "",
-    example: "趣味は読書です",
-    exampleMeaning: "sở thích của tôi là đọc sách",
-    audio: a56,
-    exampleAudio: ex56
-  },
-
-  {
-    id: 56,
-    kanji: "興味",
-    hira: "きょうみ",
-    romaji: "kyoumi",
-    meaning: "hứng thú",
-    vn: "",
-    example: "私は歴史に興味がある",
-    exampleMeaning: "tôi có hứng thú với lịch sử",
-    audio: a57,
-    exampleAudio: ex57
-  },
-
-  {
-    id: 57,
-    kanji: "思い出",
-    hira: "おもいで",
-    romaji: "omoide",
-    meaning: "kỉ niệm, kí ức",
-    vn: "",
-    example: "子供のころの思出",
-    exampleMeaning: "kí ức thuở nhỏ",
-    audio: a58,
-    exampleAudio: ex58
-  },
-
-  {
-    id: 58,
-    kanji: "冗談",
-    hira: "じょうだん",
-    romaji: "joudan",
-    meaning: "đùa cợt, trêu đùa",
-    vn: "",
-    example: "冗談を言ったら、みんなが本気にした",
-    exampleMeaning: "Thử nói đùa thôi nhưng mọi người lại cho là thật",
-    audio: a59,
-    exampleAudio: ex59
-  },
-
-  {
-    id: 59,
-    kanji: "目的",
-    hira: "もくてき",
-    romaji: "mokuteki",
-    meaning: "mục đích",
-    vn: "",
-    example: "日本に来た目的は大学への入学だ",
-    exampleMeaning: "mục đích tôi đến Nhật là nhập học đại học",
-    audio: a60,
-    exampleAudio: ex60
-  },
-
-  {
-    id: 60,
-    kanji: "約束",
-    hira: "やくそく",
-    romaji: "yakusoku",
-    meaning: "lời hứa, cuộc hẹn",
-    vn: "",
-    example: "彼と結婚の約束をした",
-    exampleMeaning: "tôi đã hứa sẽ kết hôn với anh ấy",
-    audio: a61,
-    exampleAudio: ex61
-  },
-
-  {
-    id: 61,
-    kanji: "",
-    hira: "おしゃべり",
-    romaji: "oshaberi",
-    meaning: "nói chuyện",
-    vn: "",
-    example: "授業中に隣の人とおしゃべりしていて、先生に怒られた",
-    exampleMeaning: "vì nói chuyện với bạn bên cạnh trong giờ học nên tôi bị thầy mắng",
-    audio: a62,
-    exampleAudio: ex62
-  },
-
-  {
-    id: 62,
-    kanji: "遠慮",
-    hira: "えんりょ",
-    romaji: "enryo",
-    meaning: "khách khí, ngần ngại",
-    vn: "",
-    example: "遠慮しないで食べてください",
-    exampleMeaning: "Hãy ăn đi, đừng ngại",
-    audio: a63,
-    exampleAudio: ex63
-  },
-
-  {
-    id: 63,
-    kanji: "我慢",
-    hira: "がまん",
-    romaji: "gaman",
-    meaning: "chịu đựng, kìm nén",
-    vn: "",
-    example: "痛くても我慢する",
-    exampleMeaning: "dù đau tôi cũng cố nhịn",
-    audio: a64,
-    exampleAudio: ex64
-  },
-
-  {
-    id: 64,
-    kanji: "迷惑",
-    hira: "めいわく",
-    romaji: "meiwaku",
-    meaning: "rắc rối, phiền toái",
-    vn: "Mê hoặc",
-    example: "人に迷惑をかけてはいけない",
-    exampleMeaning: "không được làm phiền người khác",
-    audio: a65,
-    exampleAudio: ex65
-  },
-
-  {
-    id: 65,
-    kanji: "希望",
-    hira: "きぼう",
-    romaji: "kibou",
-    meaning: "kì vọng, mong muốn",
-    vn: "",
-    example: "最後まで希望を捨ててはいけない",
-    exampleMeaning: "không được từ bỏ hi vọng cho tới cuối cùng",
-    audio: a66,
-    exampleAudio: ex66
-  },
-
-  {
-    id: 66,
-    kanji: "夢",
-    hira: "ゆめ",
-    romaji: "yume",
-    meaning: "ước mơ",
-    vn: "",
-    example: "昨日、怖い夢を見た",
-    exampleMeaning: "hôm qua tôi đã mơ thấy một giấc mơ đáng sợ",
-    audio: a67,
-    exampleAudio: ex67
-  },
-
-  {
-    id: 67,
-    kanji: "賛成",
-    hira: "さんせい",
-    romaji: "sansei",
-    meaning: "tán thành, phê duyệt",
-    vn: "",
-    example: "賛成の人は手を挙げてください",
-    exampleMeaning: "những người tán thành xin hãy dơ tay lên",
-    audio: a69,
-    exampleAudio: ex69
-  },
-  {
-    id: 68,
-    kanji: "反対",
-    hira: "はんたい",
-    romaji: "hantai",
-    meaning: "phản đối",
-    vn: "",
-    example: "彼の意見には反対だ",
-    exampleMeaning: "ý kiến của anh ấy là phản dối",
-    audio: a68,
-    exampleAudio: ex68
-  },
-
-  {
-    id: 69,
-    kanji: "想像",
-    hira: "そうぞう",
-    romaji: "souzou",
-    meaning: "tưởng tượng",
-    vn: "",
-    example: "想像と現実は違う",
-    exampleMeaning: "tưởng tượng và thực tế là khác nhau",
-    audio: a70,
-    exampleAudio: ex70
-  },
-
-  {
-    id: 70,
-    kanji: "努力",
-    hira: "どりょく",
-    romaji: "doryoku",
-    meaning: "nỗ lực",
-    vn: "",
-    example: "一生懸命、努力をする",
-    exampleMeaning: "nỗ lực hết mình",
-    audio: a71,
-    exampleAudio: ex71
-  },
-
-  {
-    id: 71,
-    kanji: "太陽",
-    hira: "たいよう",
-    romaji: "taiyou",
-    meaning: "mặt trời, thái dương",
-    vn: "",
-    example: "太陽が昇って、温かくなった",
-    exampleMeaning: "mặt trời mọc trời đã ấm áp hơn",
-    audio: a72,
-    exampleAudio: ex72
-  },
-
-  {
-    id: 72,
-    kanji: "地球",
-    hira: "ちきゅう",
-    romaji: "chikyuu",
-    meaning: "trái đất",
-    vn: "",
-    example: "地球の環境が悪化している",
-    exampleMeaning: "môi trường của trái đất đang biến đổi xấu đi",
-    audio: a73,
-    exampleAudio: ex73
-  },
-
-  {
-    id: 73,
-    kanji: "温度",
-    hira: "おんど",
-    romaji: "ondo",
-    meaning: "nhiệt độ",
-    vn: "",
-    example: "温度を測る",
-    exampleMeaning: "đo nhiệt độ",
-    audio: a74,
-    exampleAudio: ex74
-  },
-
-  {
-    id: 74,
-    kanji: "湿度",
-    hira: "しつど",
-    romaji: "shitsudo",
-    meaning: "độ ẩm",
-    vn: "",
-    example: "今年の夏は特に湿度が高い",
-    exampleMeaning: "mùa hè năm nay độ ẩm đặc biệt cao",
-    audio: a75,
-    exampleAudio: ex75
-  },
-
-  {
-    id: 75,
-    kanji: "湿気",
-    hira: "しっけ",
-    romaji: "shikke",
-    meaning: "hơi ẩm",
-    vn: "",
-    example: "日本の夏は湿気が多い",
-    exampleMeaning: "mùa hè ở Nhật nhiều hơi ẩm",
-    audio: a76,
-    exampleAudio: ex76
-  },
-
-  {
-    id: 76,
-    kanji: "梅雨",
-    hira: "つゆ",
-    romaji: "tsuyu",
-    meaning: "mùa mưa",
-    vn: "",
-    example: "６月から７月は梅雨の時期だ",
-    exampleMeaning: "từ tháng 6 đến tháng 7 là thời kỳ mùa mưa",
-    audio: a77,
-    exampleAudio: ex77
-  },
-
-  {
-    id: 77,
-    kanji: "",
-    hira: "かび",
-    romaji: "kabi",
-    meaning: "nấm, mốc",
-    vn: "",
-    example: "梅雨の時期はかびがはえやすい",
-    exampleMeaning: "trong thời kì mùa mưa nấm mốc dễ sinh sôi",
-    audio: a78,
-    exampleAudio: ex78
-  },
-
-  {
-    id: 78,
-    kanji: "暖房",
-    hira: "だんぼう",
-    romaji: "danbou",
-    meaning: "lò sưởi",
-    vn: "",
-    example: "寒いので暖房をつける",
-    exampleMeaning: "lạnh nên bật chế độ sưởi ấm",
-    audio: a79,
-    exampleAudio: ex79
-  },
-
-  {
-    id: 79,
-    kanji: "皮",
-    hira: "かわ",
-    romaji: "kawa",
-    meaning: "da, bì, vỏ ngoài",
-    vn: "",
-    example: "果物 / 動物の皮",
-    exampleMeaning: "vỏ hoa quả, da động vật",
-    audio: a80,
-    exampleAudio: ex80
-  },
-
-  {
-    id: 80,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a81,
-    exampleAudio: ex81
-  },
-
-  {
-    id: 81,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a82,
-    exampleAudio: ex82
-  },
-
-  {
-    id: 82,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a83,
-    exampleAudio: ex83
-  },
-
-  {
-    id: 83,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a84,
-    exampleAudio: ex84
-  },
-
-  {
-    id: 84,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a85,
-    exampleAudio: ex85
-  },
-
-  {
-    id: 85,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a86,
-    exampleAudio: ex86
-  },
-
-  {
-    id: 86,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a87,
-    exampleAudio: ex87
-  },
-
-  {
-    id: 87,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a88,
-    exampleAudio: ex88
-  },
-
-  {
-    id: 88,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a89,
-    exampleAudio: ex89
-  },
-
-  {
-    id: 89,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a90,
-    exampleAudio: ex90
-  },
-
-  {
-    id: 90,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a91,
-    exampleAudio: ex91
-  },
-
-  {
-    id: 91,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a92,
-    exampleAudio: ex92
-  },
-
-  {
-    id: 92,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a93,
-    exampleAudio: ex93
-  },
-
-  {
-    id: 93,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a94,
-    exampleAudio: ex94
-  },
-
-  {
-    id: 94,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a95,
-    exampleAudio: ex95
-  },
-
-  {
-    id: 95,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a96,
-    exampleAudio: ex96
-  },
-
-  {
-    id: 96,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a97,
-    exampleAudio: ex97
-  },
-
-  {
-    id: 97,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a98,
-    exampleAudio: ex98
-  },
-
-  {
-    id: 98,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a99,
-    exampleAudio: ex99
-  },
-
-  {
-    id: 99,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a100,
-    exampleAudio: ex100
-  },
-
-  {
-    id: 100,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a101,
-    exampleAudio: ex101
-  },
-
-  {
-    id: 101,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a102,
-    exampleAudio: ex102
-  },
-
-  {
-    id: 102,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a103,
-    exampleAudio: ex103
-  },
-
-  {
-    id: 103,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a104,
-    exampleAudio: ex104
-  },
-
-  {
-    id: 104,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a105,
-    exampleAudio: ex105
-  },
-
-  {
-    id: 105,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a106,
-    exampleAudio: a106
-  },
-
-  {
-    id: 106,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a107,
-    exampleAudio: ex107
-  },
-
-  {
-    id: 107,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a108,
-    exampleAudio: ex108
-  },
-
-  {
-    id: 108,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a109,
-    exampleAudio: ex109
-  },
-
-  {
-    id: 109,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a110,
-    exampleAudio: ex110
-  },
-
-  {
-    id: 110,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a111,
-    exampleAudio: ex111
-  },
-
-  {
-    id: 111,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a112,
-    exampleAudio: ex112
-  },
-
-  {
-    id: 112,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a113,
-    exampleAudio: ex113
-  },
-
-  {
-    id: 113,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a114,
-    exampleAudio: ex114
-  },
-
-  {
-    id: 114,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a115,
-    exampleAudio: ex115
-  },
-
-  {
-    id: 115,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a116,
-    exampleAudio: ex116
-  },
-
-  {
-    id: 116,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a117,
-    exampleAudio: ex117
-  },
-
-  {
-    id: 117,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a118,
-    exampleAudio: ex118
-  },
-
-  {
-    id: 118,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a119,
-    exampleAudio: ex119
-  },
-
-  {
-    id: 119,
-    kanji: "",
-    hira: "",
-    romaji: "",
-    meaning: "",
-    vn: "",
-    example: "",
-    exampleMeaning: "",
-    audio: a120,
-    exampleAudio: ex120
   }
+
+  // {
+  //   id: 21,
+  //   kanji: "退学",
+  //   hira: "たいがく",
+  //   romaji: "taigaku",
+  //   meaning: "bỏ học , nghỉ học",
+  //   vn: "",
+  //   example: "退学の理由を説明する",
+  //   exampleMeaning: "giải thích lý do bỏ học",
+  //   audio: a22,
+  //   exampleAudio: ex22
+  // },
+
+  // {
+  //   id: 22,
+  //   kanji: "就職",
+  //   hira: "しゅうしょく",
+  //   romaji: "shuushoku",
+  //   meaning: "công ăn việc làm",
+  //   vn: "Tại chức",
+  //   example: "旅行会社に就職する",
+  //   exampleMeaning: "làm việc tại công ty du lịch",
+  //   audio: a23,
+  //   exampleAudio: ex23
+  // },
+
+  // {
+  //   id: 23,
+  //   kanji: "退職",
+  //   hira: "たいしょく",
+  //   romaji: "taishoku",
+  //   meaning: "bỏ việc, nghỉ việc",
+  //   vn: "Thoái chức",
+  //   example: "母の介護のため、退職を決めた",
+  //   exampleMeaning: "vì chăm sóc mẹ nên tôi quyết định nghỉ việc",
+  //   audio: a24,
+  //   exampleAudio: ex24
+  // },
+
+  // {
+  //   id: 24,
+  //   kanji: "失業",
+  //   hira: "しつぎょう",
+  //   romaji: "shitsugyou",
+  //   meaning: "thất nghiệp, không có việc làm",
+  //   vn: "Thất nghiệp",
+  //   example: "会社が倒産して失業した",
+  //   exampleMeaning: "tôi thất nghiệp vì công ty đã phá sản",
+  //   audio: a25,
+  //   exampleAudio: ex25
+  // },
+
+  // {
+  //   id: 25,
+  //   kanji: "残業",
+  //   hira: "ざんぎょう",
+  //   romaji: "zangyou",
+  //   meaning: "làm thêm, làm quá giờ",
+  //   vn: "Tàn nghiệp",
+  //   example: "残業が多くて疲れた",
+  //   exampleMeaning: "mệt vì làm thêm nhiều",
+  //   audio: a26,
+  //   exampleAudio: ex26
+  // },
+
+  // {
+  //   id: 26,
+  //   kanji: "生活",
+  //   hira: "せいかつ",
+  //   romaji: "seikatsu",
+  //   meaning: "sinh hoạt, cuộc sống",
+  //   vn: "",
+  //   example: "健康的な生活を送る",
+  //   exampleMeaning: "sống một cuộc sống khỏe mạnh",
+  //   audio: a27,
+  //   exampleAudio: ex27
+  // },
+
+  // {
+  //   id: 27,
+  //   kanji: "通勤",
+  //   hira: "つうきん",
+  //   romaji: "tsukin",
+  //   meaning: "đi làm",
+  //   vn: "",
+  //   example: "私は毎日一時間かけて通勤している",
+  //   exampleMeaning: "mỗi ngày tôi mất 1 tiếng đi đến chỗ làm",
+  //   audio: a28,
+  //   exampleAudio: ex28
+  // },
+
+  // {
+  //   id: 28,
+  //   kanji: "学歴",
+  //   hira: "がくれき",
+  //   romaji: "gakureki",
+  //   meaning: "bằng cấp, quá trình học",
+  //   vn: "",
+  //   example: "学歴が高くても、実力があるかどうかわからない",
+  //   exampleMeaning: "dù bằng cấp có cao, cũng không biết có thực lực hay không",
+  //   audio: a29,
+  //   exampleAudio: ex29
+  // },
+
+  // {
+  //   id: 29,
+  //   kanji: "給料",
+  //   hira: "きゅうりょう",
+  //   romaji: "kyuuryou",
+  //   meaning: "lương",
+  //   vn: "",
+  //   example: "会社から給料をもらう",
+  //   exampleMeaning: "nhận lương từ công ty",
+  //   audio: a30,
+  //   exampleAudio: ex30
+  // },
+
+  // {
+  //   id: 30,
+  //   kanji: "面接",
+  //   hira: "めんせつ",
+  //   romaji: "mensetsu",
+  //   meaning: "phỏng vấn, thi vấn đáp",
+  //   vn: "",
+  //   example: "今日会社の人との面接がある",
+  //   exampleMeaning: "hôm nay có phỏng vấn với người của công ty",
+  //   audio: a31,
+  //   exampleAudio: ex31
+  // },
+
+  // {
+  //   id: 31,
+  //   kanji: "休憩",
+  //   hira: "きゅうけい",
+  //   romaji: "kyuukei",
+  //   meaning: "nghỉ giải lao",
+  //   vn: "",
+  //   example: "ではここで、１０分間の休憩です",
+  //   exampleMeaning: "vậy thì chúng ta sẽ nghỉ 10 phút tại đây",
+  //   audio: a32,
+  //   exampleAudio: ex32
+  // },
+
+  // {
+  //   id: 32,
+  //   kanji: "観光",
+  //   hira: "かんこう",
+  //   romaji: "kankou",
+  //   meaning: "tham quan, du lịch",
+  //   vn: "",
+  //   example: "来日の目的は観光です",
+  //   exampleMeaning: "mục đích đến Nhật là đi du lịch",
+  //   audio: a33,
+  //   exampleAudio: ex33
+  // },
+
+  // {
+  //   id: 33,
+  //   kanji: "帰国",
+  //   hira: "きこく",
+  //   romaji: "kikoku",
+  //   meaning: "về nước",
+  //   vn: "",
+  //   example: "今度の正月には帰国するつもりです",
+  //   exampleMeaning: "tết này tôi định về nước",
+  //   audio: a34,
+  //   exampleAudio: ex34
+  // },
+
+  // {
+  //   id: 34,
+  //   kanji: "帰省",
+  //   hira: "きせい",
+  //   romaji: "kisei",
+  //   meaning: "về quê",
+  //   vn: "",
+  //   example: "お盆にはふるさとに帰省する日本人が多い",
+  //   exampleMeaning: "vào lễ hội Bon có nhiều người Nhật về quê",
+  //   audio: a35,
+  //   exampleAudio: ex35
+  // },
+
+  // {
+  //   id: 35,
+  //   kanji: "帰宅",
+  //   hira: "きたく",
+  //   romaji: "kitaku",
+  //   meaning: "về nhà",
+  //   vn: "",
+  //   example: "毎日忙くて帰宅が遅い",
+  //   exampleMeaning: "vì công việc bận rộn nên ngày nào cũng về nhà muộn",
+  //   audio: a36,
+  //   exampleAudio: ex36
+  // },
+
+  // {
+  //   id: 36,
+  //   kanji: "参加",
+  //   hira: "さんか",
+  //   romaji: "sanka",
+  //   meaning: "tham gia, tham dự",
+  //   vn: "",
+  //   example: "ボランティア活動に参加する",
+  //   exampleMeaning: "tham gia hoạt động tình nguyện",
+  //   audio: a37,
+  //   exampleAudio: ex37
+  // },
+
+  // {
+  //   id: 37,
+  //   kanji: "出席",
+  //   hira: "しゅっせき",
+  //   romaji: "shusseki",
+  //   meaning: "có mặt, tham dự",
+  //   vn: "",
+  //   example: "ミーテイング に出席する",
+  //   exampleMeaning: "tham dự cuộc họp",
+  //   audio: a38,
+  //   exampleAudio: ex38
+  // },
+
+  // {
+  //   id: 38,
+  //   kanji: "欠席",
+  //   hira: "けっせき",
+  //   romaji: "kesseki",
+  //   meaning: "vắng mặt, không tham dự",
+  //   vn: "",
+  //   example: "高橋さん今度の同窓会は欠席するそうだ",
+  //   exampleMeaning: "hình như lần họp lớp này anh Takahashi sẽ vắng mặt",
+  //   audio: a39,
+  //   exampleAudio: ex39
+  // },
+
+  // {
+  //   id: 39,
+  //   kanji: "遅刻",
+  //   hira: "ちこく",
+  //   romaji: "chikoku",
+  //   meaning: "muộn",
+  //   vn: "",
+  //   example: "寝坊して授業に遅刻する",
+  //   exampleMeaning: "vì ngủ quên nên muộn giờ học",
+  //   audio: a40,
+  //   exampleAudio: ex40
+  // },
+
+  // {
+  //   id: 40,
+  //   kanji: "化粧",
+  //   hira: "けしょう",
+  //   romaji: "keshou",
+  //   meaning: "trang điểm, hóa trang",
+  //   vn: "",
+  //   example: "あなたは毎日、お化粧に何分ぐらいかけていますか",
+  //   exampleMeaning: "mỗi ngày bạn dành mấy phút để trang điểm",
+  //   audio: a41,
+  //   exampleAudio: ex41
+  // },
+
+  // {
+  //   id: 41,
+  //   kanji: "計算",
+  //   hira: "けいさん",
+  //   romaji: "keisan",
+  //   meaning: "tính toán",
+  //   vn: "",
+  //   example: "私は計算が苦手だ",
+  //   exampleMeaning: "tôi kém tính toán",
+  //   audio: a42,
+  //   exampleAudio: ex42
+  // },
+
+  // {
+  //   id: 42,
+  //   kanji: "計画",
+  //   hira: "けいかく",
+  //   romaji: "keikaku",
+  //   meaning: "kế hoạch",
+  //   vn: "",
+  //   example: "来年の計画を立てる",
+  //   exampleMeaning: "lập kế hoạch cho năm sau",
+  //   audio: a43,
+  //   exampleAudio: ex43
+  // },
+
+  // {
+  //   id: 43,
+  //   kanji: "成功",
+  //   hira: "せいこう",
+  //   romaji: "seikou",
+  //   meaning: "thành công",
+  //   vn: "",
+  //   example: "実験に成功する",
+  //   exampleMeaning: "thí nghiệm thành công",
+  //   audio: a44,
+  //   exampleAudio: ex44
+  // },
+
+  // {
+  //   id: 44,
+  //   kanji: "失敗",
+  //   hira: "しっぱい",
+  //   romaji: "shippai",
+  //   meaning: "thất bại",
+  //   vn: "",
+  //   example: "失敗は成功のもと",
+  //   exampleMeaning: "Thất bại là mẹ của thành công",
+  //   audio: a45,
+  //   exampleAudio: ex45
+  // },
+
+  // {
+  //   id: 45,
+  //   kanji: "準備",
+  //   hira: "じゅんび",
+  //   romaji: "junbi",
+  //   meaning: "chuẩn bị",
+  //   vn: "",
+  //   example: "引っ越しの準備がおわった",
+  //   exampleMeaning: "việc chuẩn bị chuyển nhà đã xong",
+  //   audio: a46,
+  //   exampleAudio: ex46
+  // },
+
+  // {
+  //   id: 46,
+  //   kanji: "整理",
+  //   hira: "せいり",
+  //   romaji: "seiri",
+  //   meaning: "chỉnh sửa, thu dọn, sửa",
+  //   vn: "",
+  //   example: "資料の整理",
+  //   exampleMeaning: "chỉnh sửa tài liệu",
+  //   audio: a47,
+  //   exampleAudio: ex47
+  // },
+
+  // {
+  //   id: 47,
+  //   kanji: "注文",
+  //   hira: "ちゅうもん",
+  //   romaji: "chuumon",
+  //   meaning: "gọi món, đặt hàng",
+  //   vn: "",
+  //   example: "喫茶店コーヒー を注文する",
+  //   exampleMeaning: "tôi gọi cafe ở quán giải khát",
+  //   audio: a48,
+  //   exampleAudio: ex48
+  // },
+
+  // {
+  //   id: 48,
+  //   kanji: "貯金",
+  //   hira: "ちょきん",
+  //   romaji: "chokin",
+  //   meaning: "tiết kiệm tiền, tiền tiết kiệm",
+  //   vn: "",
+  //   example: "貯金が増える",
+  //   exampleMeaning: "tiền tiết kiệm tăng",
+  //   audio: a49,
+  //   exampleAudio: ex49
+  // },
+
+  // {
+  //   id: 49,
+  //   kanji: "徹夜",
+  //   hira: "てつや",
+  //   romaji: "tetsuya",
+  //   meaning: "thức trắng đêm",
+  //   vn: "",
+  //   example: "徹夜で勉強する",
+  //   exampleMeaning: "thức đêm học bài",
+  //   audio: a50,
+  //   exampleAudio: ex50
+  // },
+
+  // {
+  //   id: 50,
+  //   kanji: "引っ越し",
+  //   hira: "ひっこし",
+  //   romaji: "hikkoshi",
+  //   meaning: "chuyển nhà",
+  //   vn: "",
+  //   example: "引っ越しを手伝う",
+  //   exampleMeaning: "giúp đỡ việc chuyển nhà",
+  //   audio: a51,
+  //   exampleAudio: ex51
+  // },
+
+  // {
+  //   id: 51,
+  //   kanji: "身長",
+  //   hira: "しんちょう",
+  //   romaji: "shinchou",
+  //   meaning: "chiều cao, tầm vóc",
+  //   vn: "",
+  //   example: "身長を測る",
+  //   exampleMeaning: "đo chiều cao",
+  //   audio: a52,
+  //   exampleAudio: ex52
+  // },
+
+  // {
+  //   id: 52,
+  //   kanji: "体重",
+  //   hira: "たいじゅう",
+  //   romaji: "taijou",
+  //   meaning: "trọng lượng",
+  //   vn: "",
+  //   example: "体重を測る",
+  //   exampleMeaning: "đo trọng lượng",
+  //   audio: a53,
+  //   exampleAudio: ex53
+  // },
+
+  // {
+  //   id: 53,
+  //   kanji: "怪我",
+  //   hira: "けが",
+  //   romaji: "kega",
+  //   meaning: "vết thương",
+  //   vn: "",
+  //   example: "小さなけが",
+  //   exampleMeaning: "vét thương nhỏ",
+  //   audio: a54,
+  //   exampleAudio: ex54
+  // },
+
+  // {
+  //   id: 54,
+  //   kanji: "会",
+  //   hira: "かい",
+  //   romaji: "kai",
+  //   meaning: "hội",
+  //   vn: "",
+  //   example: "忘年会を開く",
+  //   exampleMeaning: "Tổ chức tiệc cuối năm",
+  //   audio: a55,
+  //   exampleAudio: ex55
+  // },
+
+  // {
+  //   id: 55,
+  //   kanji: "趣味",
+  //   hira: "しゅみ",
+  //   romaji: "shumi",
+  //   meaning: "sở thích, yêu thích",
+  //   vn: "",
+  //   example: "趣味は読書です",
+  //   exampleMeaning: "sở thích của tôi là đọc sách",
+  //   audio: a56,
+  //   exampleAudio: ex56
+  // },
+
+  // {
+  //   id: 56,
+  //   kanji: "興味",
+  //   hira: "きょうみ",
+  //   romaji: "kyoumi",
+  //   meaning: "hứng thú",
+  //   vn: "",
+  //   example: "私は歴史に興味がある",
+  //   exampleMeaning: "tôi có hứng thú với lịch sử",
+  //   audio: a57,
+  //   exampleAudio: ex57
+  // },
+
+  // {
+  //   id: 57,
+  //   kanji: "思い出",
+  //   hira: "おもいで",
+  //   romaji: "omoide",
+  //   meaning: "kỉ niệm, kí ức",
+  //   vn: "",
+  //   example: "子供のころの思出",
+  //   exampleMeaning: "kí ức thuở nhỏ",
+  //   audio: a58,
+  //   exampleAudio: ex58
+  // },
+
+  // {
+  //   id: 58,
+  //   kanji: "冗談",
+  //   hira: "じょうだん",
+  //   romaji: "joudan",
+  //   meaning: "đùa cợt, trêu đùa",
+  //   vn: "",
+  //   example: "冗談を言ったら、みんなが本気にした",
+  //   exampleMeaning: "Thử nói đùa thôi nhưng mọi người lại cho là thật",
+  //   audio: a59,
+  //   exampleAudio: ex59
+  // },
+
+  // {
+  //   id: 59,
+  //   kanji: "目的",
+  //   hira: "もくてき",
+  //   romaji: "mokuteki",
+  //   meaning: "mục đích",
+  //   vn: "",
+  //   example: "日本に来た目的は大学への入学だ",
+  //   exampleMeaning: "mục đích tôi đến Nhật là nhập học đại học",
+  //   audio: a60,
+  //   exampleAudio: ex60
+  // },
+
+  // {
+  //   id: 60,
+  //   kanji: "約束",
+  //   hira: "やくそく",
+  //   romaji: "yakusoku",
+  //   meaning: "lời hứa, cuộc hẹn",
+  //   vn: "",
+  //   example: "彼と結婚の約束をした",
+  //   exampleMeaning: "tôi đã hứa sẽ kết hôn với anh ấy",
+  //   audio: a61,
+  //   exampleAudio: ex61
+  // },
+
+  // {
+  //   id: 61,
+  //   kanji: "",
+  //   hira: "おしゃべり",
+  //   romaji: "oshaberi",
+  //   meaning: "nói chuyện",
+  //   vn: "",
+  //   example: "授業中に隣の人とおしゃべりしていて、先生に怒られた",
+  //   exampleMeaning: "vì nói chuyện với bạn bên cạnh trong giờ học nên tôi bị thầy mắng",
+  //   audio: a62,
+  //   exampleAudio: ex62
+  // },
+
+  // {
+  //   id: 62,
+  //   kanji: "遠慮",
+  //   hira: "えんりょ",
+  //   romaji: "enryo",
+  //   meaning: "khách khí, ngần ngại",
+  //   vn: "",
+  //   example: "遠慮しないで食べてください",
+  //   exampleMeaning: "Hãy ăn đi, đừng ngại",
+  //   audio: a63,
+  //   exampleAudio: ex63
+  // },
+
+  // {
+  //   id: 63,
+  //   kanji: "我慢",
+  //   hira: "がまん",
+  //   romaji: "gaman",
+  //   meaning: "chịu đựng, kìm nén",
+  //   vn: "",
+  //   example: "痛くても我慢する",
+  //   exampleMeaning: "dù đau tôi cũng cố nhịn",
+  //   audio: a64,
+  //   exampleAudio: ex64
+  // },
+
+  // {
+  //   id: 64,
+  //   kanji: "迷惑",
+  //   hira: "めいわく",
+  //   romaji: "meiwaku",
+  //   meaning: "rắc rối, phiền toái",
+  //   vn: "Mê hoặc",
+  //   example: "人に迷惑をかけてはいけない",
+  //   exampleMeaning: "không được làm phiền người khác",
+  //   audio: a65,
+  //   exampleAudio: ex65
+  // },
+
+  // {
+  //   id: 65,
+  //   kanji: "希望",
+  //   hira: "きぼう",
+  //   romaji: "kibou",
+  //   meaning: "kì vọng, mong muốn",
+  //   vn: "",
+  //   example: "最後まで希望を捨ててはいけない",
+  //   exampleMeaning: "không được từ bỏ hi vọng cho tới cuối cùng",
+  //   audio: a66,
+  //   exampleAudio: ex66
+  // },
+
+  // {
+  //   id: 66,
+  //   kanji: "夢",
+  //   hira: "ゆめ",
+  //   romaji: "yume",
+  //   meaning: "ước mơ",
+  //   vn: "",
+  //   example: "昨日、怖い夢を見た",
+  //   exampleMeaning: "hôm qua tôi đã mơ thấy một giấc mơ đáng sợ",
+  //   audio: a67,
+  //   exampleAudio: ex67
+  // },
+
+  // {
+  //   id: 67,
+  //   kanji: "賛成",
+  //   hira: "さんせい",
+  //   romaji: "sansei",
+  //   meaning: "tán thành, phê duyệt",
+  //   vn: "",
+  //   example: "賛成の人は手を挙げてください",
+  //   exampleMeaning: "những người tán thành xin hãy dơ tay lên",
+  //   audio: a69,
+  //   exampleAudio: ex69
+  // },
+  // {
+  //   id: 68,
+  //   kanji: "反対",
+  //   hira: "はんたい",
+  //   romaji: "hantai",
+  //   meaning: "phản đối",
+  //   vn: "",
+  //   example: "彼の意見には反対だ",
+  //   exampleMeaning: "ý kiến của anh ấy là phản dối",
+  //   audio: a68,
+  //   exampleAudio: ex68
+  // },
+
+  // {
+  //   id: 69,
+  //   kanji: "想像",
+  //   hira: "そうぞう",
+  //   romaji: "souzou",
+  //   meaning: "tưởng tượng",
+  //   vn: "",
+  //   example: "想像と現実は違う",
+  //   exampleMeaning: "tưởng tượng và thực tế là khác nhau",
+  //   audio: a70,
+  //   exampleAudio: ex70
+  // },
+
+  // {
+  //   id: 70,
+  //   kanji: "努力",
+  //   hira: "どりょく",
+  //   romaji: "doryoku",
+  //   meaning: "nỗ lực",
+  //   vn: "",
+  //   example: "一生懸命、努力をする",
+  //   exampleMeaning: "nỗ lực hết mình",
+  //   audio: a71,
+  //   exampleAudio: ex71
+  // },
+
+  // {
+  //   id: 71,
+  //   kanji: "太陽",
+  //   hira: "たいよう",
+  //   romaji: "taiyou",
+  //   meaning: "mặt trời, thái dương",
+  //   vn: "",
+  //   example: "太陽が昇って、温かくなった",
+  //   exampleMeaning: "mặt trời mọc trời đã ấm áp hơn",
+  //   audio: a72,
+  //   exampleAudio: ex72
+  // },
+
+  // {
+  //   id: 72,
+  //   kanji: "地球",
+  //   hira: "ちきゅう",
+  //   romaji: "chikyuu",
+  //   meaning: "trái đất",
+  //   vn: "",
+  //   example: "地球の環境が悪化している",
+  //   exampleMeaning: "môi trường của trái đất đang biến đổi xấu đi",
+  //   audio: a73,
+  //   exampleAudio: ex73
+  // },
+
+  // {
+  //   id: 73,
+  //   kanji: "温度",
+  //   hira: "おんど",
+  //   romaji: "ondo",
+  //   meaning: "nhiệt độ",
+  //   vn: "",
+  //   example: "温度を測る",
+  //   exampleMeaning: "đo nhiệt độ",
+  //   audio: a74,
+  //   exampleAudio: ex74
+  // },
+
+  // {
+  //   id: 74,
+  //   kanji: "湿度",
+  //   hira: "しつど",
+  //   romaji: "shitsudo",
+  //   meaning: "độ ẩm",
+  //   vn: "",
+  //   example: "今年の夏は特に湿度が高い",
+  //   exampleMeaning: "mùa hè năm nay độ ẩm đặc biệt cao",
+  //   audio: a75,
+  //   exampleAudio: ex75
+  // },
+
+  // {
+  //   id: 75,
+  //   kanji: "湿気",
+  //   hira: "しっけ",
+  //   romaji: "shikke",
+  //   meaning: "hơi ẩm",
+  //   vn: "",
+  //   example: "日本の夏は湿気が多い",
+  //   exampleMeaning: "mùa hè ở Nhật nhiều hơi ẩm",
+  //   audio: a76,
+  //   exampleAudio: ex76
+  // },
+
+  // {
+  //   id: 76,
+  //   kanji: "梅雨",
+  //   hira: "つゆ",
+  //   romaji: "tsuyu",
+  //   meaning: "mùa mưa",
+  //   vn: "",
+  //   example: "６月から７月は梅雨の時期だ",
+  //   exampleMeaning: "từ tháng 6 đến tháng 7 là thời kỳ mùa mưa",
+  //   audio: a77,
+  //   exampleAudio: ex77
+  // },
+
+  // {
+  //   id: 77,
+  //   kanji: "",
+  //   hira: "かび",
+  //   romaji: "kabi",
+  //   meaning: "nấm, mốc",
+  //   vn: "",
+  //   example: "梅雨の時期はかびがはえやすい",
+  //   exampleMeaning: "trong thời kì mùa mưa nấm mốc dễ sinh sôi",
+  //   audio: a78,
+  //   exampleAudio: ex78
+  // },
+
+  // {
+  //   id: 78,
+  //   kanji: "暖房",
+  //   hira: "だんぼう",
+  //   romaji: "danbou",
+  //   meaning: "lò sưởi",
+  //   vn: "",
+  //   example: "寒いので暖房をつける",
+  //   exampleMeaning: "lạnh nên bật chế độ sưởi ấm",
+  //   audio: a79,
+  //   exampleAudio: ex79
+  // },
+
+  // {
+  //   id: 79,
+  //   kanji: "皮",
+  //   hira: "かわ",
+  //   romaji: "kawa",
+  //   meaning: "da, bì, vỏ ngoài",
+  //   vn: "",
+  //   example: "果物 / 動物の皮",
+  //   exampleMeaning: "vỏ hoa quả, da động vật",
+  //   audio: a80,
+  //   exampleAudio: ex80
+  // },
+
+  // {
+  //   id: 80,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a81,
+  //   exampleAudio: ex81
+  // },
+
+  // {
+  //   id: 81,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a82,
+  //   exampleAudio: ex82
+  // },
+
+  // {
+  //   id: 82,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a83,
+  //   exampleAudio: ex83
+  // },
+
+  // {
+  //   id: 83,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a84,
+  //   exampleAudio: ex84
+  // },
+
+  // {
+  //   id: 84,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a85,
+  //   exampleAudio: ex85
+  // },
+
+  // {
+  //   id: 85,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a86,
+  //   exampleAudio: ex86
+  // },
+
+  // {
+  //   id: 86,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a87,
+  //   exampleAudio: ex87
+  // },
+
+  // {
+  //   id: 87,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a88,
+  //   exampleAudio: ex88
+  // },
+
+  // {
+  //   id: 88,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a89,
+  //   exampleAudio: ex89
+  // },
+
+  // {
+  //   id: 89,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a90,
+  //   exampleAudio: ex90
+  // },
+
+  // {
+  //   id: 90,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a91,
+  //   exampleAudio: ex91
+  // },
+
+  // {
+  //   id: 91,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a92,
+  //   exampleAudio: ex92
+  // },
+
+  // {
+  //   id: 92,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a93,
+  //   exampleAudio: ex93
+  // },
+
+  // {
+  //   id: 93,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a94,
+  //   exampleAudio: ex94
+  // },
+
+  // {
+  //   id: 94,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a95,
+  //   exampleAudio: ex95
+  // },
+
+  // {
+  //   id: 95,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a96,
+  //   exampleAudio: ex96
+  // },
+
+  // {
+  //   id: 96,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a97,
+  //   exampleAudio: ex97
+  // },
+
+  // {
+  //   id: 97,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a98,
+  //   exampleAudio: ex98
+  // },
+
+  // {
+  //   id: 98,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a99,
+  //   exampleAudio: ex99
+  // },
+
+  // {
+  //   id: 99,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a100,
+  //   exampleAudio: ex100
+  // },
+
+  // {
+  //   id: 100,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a101,
+  //   exampleAudio: ex101
+  // },
+
+  // {
+  //   id: 101,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a102,
+  //   exampleAudio: ex102
+  // },
+
+  // {
+  //   id: 102,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a103,
+  //   exampleAudio: ex103
+  // },
+
+  // {
+  //   id: 103,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a104,
+  //   exampleAudio: ex104
+  // },
+
+  // {
+  //   id: 104,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a105,
+  //   exampleAudio: ex105
+  // },
+
+  // {
+  //   id: 105,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a106,
+  //   exampleAudio: a106
+  // },
+
+  // {
+  //   id: 106,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a107,
+  //   exampleAudio: ex107
+  // },
+
+  // {
+  //   id: 107,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a108,
+  //   exampleAudio: ex108
+  // },
+
+  // {
+  //   id: 108,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a109,
+  //   exampleAudio: ex109
+  // },
+
+  // {
+  //   id: 109,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a110,
+  //   exampleAudio: ex110
+  // },
+
+  // {
+  //   id: 110,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a111,
+  //   exampleAudio: ex111
+  // },
+
+  // {
+  //   id: 111,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a112,
+  //   exampleAudio: ex112
+  // },
+
+  // {
+  //   id: 112,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a113,
+  //   exampleAudio: ex113
+  // },
+
+  // {
+  //   id: 113,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a114,
+  //   exampleAudio: ex114
+  // },
+
+  // {
+  //   id: 114,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a115,
+  //   exampleAudio: ex115
+  // },
+
+  // {
+  //   id: 115,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a116,
+  //   exampleAudio: ex116
+  // },
+
+  // {
+  //   id: 116,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a117,
+  //   exampleAudio: ex117
+  // },
+
+  // {
+  //   id: 117,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a118,
+  //   exampleAudio: ex118
+  // },
+
+  // {
+  //   id: 118,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a119,
+  //   exampleAudio: ex119
+  // },
+
+  // {
+  //   id: 119,
+  //   kanji: "",
+  //   hira: "",
+  //   romaji: "",
+  //   meaning: "",
+  //   vn: "",
+  //   example: "",
+  //   exampleMeaning: "",
+  //   audio: a120,
+  //   exampleAudio: ex120
+  // }
 ];
 export default data;

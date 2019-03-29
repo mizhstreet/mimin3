@@ -1,7 +1,5 @@
 import React from "react";
 import { MaterialIcons } from "@expo/vector-icons";
-import WordCard from "../components/WordCard";
-import data from "../data/Unit1";
 import {
   TouchableNativeFeedback,
   View,
@@ -9,16 +7,45 @@ import {
   StyleSheet,
   FlatList
 } from "react-native";
+import WordCard from "../components/WordCard";
+import data from "../data/Unit1";
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: "#e57373",
+    flex: 1
+  },
+  searchBar: {
+    justifyContent: "space-between",
+    flexDirection: "row",
+    borderWidth: 2,
+    borderColor: "#e57373",
+    alignItems: "center",
+    height: 50,
+    borderRadius: 20,
+    paddingHorizontal: 20,
+    backgroundColor: "white",
+    marginHorizontal: 15,
+    marginVertical: 15
+  },
+  input: {
+    height: 40,
+    fontSize: 20
+  },
+  list: {
+    flex: 1,
+    paddingBottom: 30
+  }
+});
+
 export default class SearchScreen extends React.Component {
   state = {
-    query: "",
     data: []
   };
+
   handleTextChange = text => {
     this.setState({
-      data: data.filter(arr => {
-        return arr.romaji.toLowerCase().includes(text.toLowerCase());
-      })
+      data: data.filter(arr => arr.romaji.toLowerCase().includes(text.toLowerCase()))
     });
   };
 
@@ -55,30 +82,3 @@ export default class SearchScreen extends React.Component {
     );
   }
 }
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: "#e57373",
-    flex: 1
-  },
-  searchBar: {
-    justifyContent: "space-between",
-    flexDirection: "row",
-    borderWidth: 2,
-    borderColor: "#e57373",
-    alignItems: "center",
-    height: 50,
-    borderRadius: 20,
-    paddingHorizontal: 20,
-    backgroundColor: "white",
-    marginHorizontal: 15,
-    marginVertical: 15
-  },
-  input: {
-    height: 40,
-    fontSize: 20
-  },
-  list: {
-    flex: 1,
-    paddingBottom: 30
-  }
-});

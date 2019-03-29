@@ -1,7 +1,8 @@
-import {Container} from 'unstated';
-class ModalStateContainer extends Container{
+import { Container } from "unstated";
+
+class ModalStateContainer extends Container {
   state = {
-    kanji : null,
+    kanji: null,
     hira: null,
     meaning: null,
     vn: null,
@@ -10,14 +11,18 @@ class ModalStateContainer extends Container{
     exampleMeaning: null,
     exampleAudio: null,
     visible: false
-  }
-  setData = (data) => {
+  };
+
+  setData = data => {
     this.setState({
       ...data
     });
-  }
+  };
+
   handleVisible = () => {
-    this.setState({visible: !this.state.visible})
-  }
+    this.setState(prevState => ({
+      visible: !prevState.visible
+    }));
+  };
 }
 export default ModalStateContainer;
