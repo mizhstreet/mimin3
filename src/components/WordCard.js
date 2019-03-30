@@ -10,7 +10,6 @@ import WordStateContainer from "../state-containers/WordStateContainer";
 
 const styles = StyleSheet.create({
   card: {
-    flex: 1,
     elevation: 5,
     borderColor: "gray",
     marginTop: 7,
@@ -21,7 +20,8 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
-    marginBottom: 7
+    marginBottom: 7,
+    height: 140
   },
   cardHeader: {
     flexWrap: "wrap",
@@ -99,7 +99,7 @@ export default class WordCard extends React.PureComponent {
                   <View style={styles.iconWrapper}>
                     <MaterialIcons
                       name={
-                        this.props.cardData.favorite
+                        container.state.data[this.props.index].favorite
                           ? "favorite"
                           : "favorite-border"
                       }

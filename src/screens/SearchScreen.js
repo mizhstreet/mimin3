@@ -1,14 +1,17 @@
 import React from "react";
 import { MaterialIcons } from "@expo/vector-icons";
 import {
-  TouchableNativeFeedback,
-  View,
-  TextInput,
-  StyleSheet,
-  FlatList
+  LayoutProvider,
+  DataProvider,
+  RecyclerListView
+} from "recyclerlistview";
+import {
+ Dimensions, View, TextInput, StyleSheet 
 } from "react-native";
 import WordCard from "../components/WordCard";
 import data from "../data/Unit1";
+
+const { width } = Dimensions.get("window");
 
 const styles = StyleSheet.create({
   container: {
@@ -39,17 +42,51 @@ const styles = StyleSheet.create({
 });
 
 export default class SearchScreen extends React.Component {
-  state = {
-    data: []
-  };
-
-  handleTextChange = text => {
-    this.setState({
-      data: data.filter(arr => arr.romaji.toLowerCase().includes(text.toLowerCase()))
-    });
-  };
+  constructor() {
+    super();
+    this.state = {
+      dataProvider: new DataProvider((r1, r2) => r1 !== r2).cloneWithRows(
+        data.map(item => ({
+          type: "normal",
+          item
+        }))
+      )
+    };
+    this.handleTextChange = text => {
+      this.setState({
+        dataProvider: new DataProvider((r1, r2) => r1 !== r2).cloneWithRows(
+          data
+            .filter(i => i.romaji.toLowerCase().includes(text.toLowerCase()))
+            .map(item => ({
+              type: "normal",
+              item
+            }))
+        )
+      });
+    };
+    this.layoutProvider = new LayoutProvider(
+      i => this.state.dataProvider.getDataForIndex(i).type,
+      (type, dim) => {
+        switch (type) {
+          case "normal":
+            dim.width = width;
+            dim.height = 150;
+            break;
+          default:
+            dim.width = 0;
+            dim.height = 0;
+            break;
+        }
+      }
+    );
+  }
 
   render() {
+    const rowRenderer = (_, rowData) => (
+      <View>
+        <WordCard cardData={rowData.item} index={rowData.item.id} />
+      </View>
+    );
     return (
       <View style={styles.container}>
         <View style={styles.searchBar}>
@@ -60,24 +97,18 @@ export default class SearchScreen extends React.Component {
               this.handleTextChange(text);
             }}
           />
-          <TouchableNativeFeedback
-            onPress={() => alert("Save success")}
-            background={TouchableNativeFeedback.SelectableBackground()}
-          >
-            <View>
-              <MaterialIcons name="search" size={23} />
-            </View>
-          </TouchableNativeFeedback>
+          <View>
+            <MaterialIcons name="search" size={23} />
+          </View>
         </View>
-        <FlatList
-          style={styles.list}
-          data={this.state.data}
-          renderItem={({ item }) => (
-            <WordCard cardData={item} index={item.id} />
-          )}
-          keyExtractor={(_, index) => index.toString()}
-          overScrollMode="always"
-        />
+        <React.Fragment>
+          <RecyclerListView
+            style={{ flex: 1, backgroundColor: "#e57373" }}
+            dataProvider={this.state.dataProvider}
+            layoutProvider={this.layoutProvider}
+            rowRenderer={rowRenderer}
+          />
+        </React.Fragment>
       </View>
     );
   }
