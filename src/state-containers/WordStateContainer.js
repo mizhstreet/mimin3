@@ -1,7 +1,7 @@
 import { Container } from "unstated";
 import { AsyncStorage } from "react-native";
 import pull from "lodash.pull";
-import data from "../data/Unit1";
+import data from "../data/data";
 
 class WordStateContainer extends Container {
   constructor() {

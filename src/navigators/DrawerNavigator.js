@@ -3,7 +3,7 @@ import { createDrawerNavigator } from "react-navigation";
 import DrawerContent from "../custom-components/DrawerContent";
 import SearchScreen from "../screens/SearchScreen";
 import FavoriteScreen from "../screens/FavoriteScreen";
-import UnitScreen from "../custom-components/UnitScreen";
+import UnitScreen from "../screens/UnitScreen";
 // util
 import CustomNavOption from "../utils/CustomNavOption";
 
@@ -25,14 +25,14 @@ const DrawerNavigator = createDrawerNavigator(
     ),
     UnitOneScreen: CustomNavOption(
       "UnitOneScreen",
-      UnitScreen(0, 2),
+      UnitScreen(0, 120),
       "book",
       "Unit 1",
       "Unit 1"
     ),
     UnitTwoScreen: CustomNavOption(
       "UnitTwoScreen",
-      UnitScreen(6, 70),
+      UnitScreen(120, 220),
       "book",
       "Unit 2",
       "Unit 2"

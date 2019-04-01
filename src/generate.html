@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="new"></div>
+    <script>
+      let dataString = "";
+      for (let i = 120; i < 220; i++) {
+        dataString += "{\n";
+        dataString += "id:" + i + ",";
+        dataString += 'kanji:"",\n';
+        dataString += 'hira:"",\n';
+        dataString += 'meaning:"",\n';
+        dataString += 'romaji:"",\n';
+        dataString += 'vn:"",\n';
+        dataString += 'example:"",\n';
+        dataString += 'exampleMeaning:"",\n';
+        dataString += "audio:a" + (i + 1) + ",";
+        dataString += "exampleAudio:ex" + (i + 1);
+        dataString += "},\n";
+      }
+      //   let importString = "";
+      //   for (let i = 120; i < 220; i++) {
+      //     importString +=
+      //       "import ex" + i + ' from "../assets/audios/ex' + i + '.mp3";';
+      //   }
+      document.getElementById("new").innerHTML = dataString;
+    </script>
+  </body>
+</html>

@@ -1,8 +1,5 @@
-const data = [
-  {
-    kanji: "男性",
-    hira: "だんせい",
-    meaning: "nam giới, đàn ông",
-    vn: "Nam Tính"
-  }
-]
+import data1 from "./Unit1";
+import data2 from "./Unit2";
+
+const data = [...data1, ...data2];
+export default data;

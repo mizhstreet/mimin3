@@ -9,61 +9,10 @@ import {
 import Spinner from "react-native-loading-spinner-overlay";
 import WordCard from "../components/WordCard";
 import WordStateContainer from "../state-containers/WordStateContainer";
-import data from "../data/Unit1";
+import data from "../data/data";
 
 const { width } = Dimensions.get("window");
 
-// const UnitScreen = (indexStart, indexEnd) => () => (
-//   <Subscribe to={[WordStateContainer]}>
-//     {container => {
-//       if (container.state.favoriteDataLoaded) {
-//         const dataProvider = new DataProvider(
-//           (r1, r2) => r1 !== r2
-//         ).cloneWithRows(
-//           container.state.data.slice(indexStart, indexEnd).map(item => ({
-//             type: "normal",
-//             item
-//           }))
-//         );
-
-//         const layoutProvider = new LayoutProvider(
-//           i => dataProvider.getDataForIndex(i).type,
-//           (type, dim) => {
-//             switch (type) {
-//               case "normal":
-//                 dim.width = width;
-//                 dim.height = 150;
-//                 break;
-//               default:
-//                 dim.width = 0;
-//                 dim.height = 0;
-//                 break;
-//             }
-//           }
-//         );
-
-//         const rowRenderer = (_, data) => (
-//           <View>
-//             <WordCard cardData={data.item} index={data.item.id} />
-//           </View>
-//         );
-
-//         return (
-//           <React.Fragment>
-//             <RecyclerListView
-//               style={{ flex: 1, backgroundColor: "#e57373" }}
-//               dataProvider={dataProvider}
-//               layoutProvider={layoutProvider}
-//               rowRenderer={rowRenderer}
-//             />
-//           </React.Fragment>
-//         );
-//       }
-//       container.getFavoriteData();
-//       return <Spinner visible />;
-//     }}
-//   </Subscribe>
-// );
 const UnitScreen = (indexStart, indexEnd) => class extends React.Component {
     constructor() {
       super();

@@ -80,7 +80,9 @@ export default class WordCard extends React.PureComponent {
       <View style={styles.card}>
         <View style={styles.cardContent}>
           <View style={styles.cardHeader}>
-            <Text style={styles.kanji}>{kanji}</Text>
+            <Text style={styles.kanji}>
+              {`${this.props.index + 1}. ${kanji}`}
+            </Text>
             <Text style={styles.vn}>{vn}</Text>
           </View>
           <Text style={styles.hira}>{hira}</Text>

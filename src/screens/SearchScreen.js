@@ -9,7 +9,7 @@ import {
  Dimensions, View, TextInput, StyleSheet 
 } from "react-native";
 import WordCard from "../components/WordCard";
-import data from "../data/Unit1";
+import data from "../data/data";
 
 const { width } = Dimensions.get("window");
 
