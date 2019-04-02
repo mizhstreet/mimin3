@@ -1590,7 +1590,7 @@ const data = [
     romaji: "tera",
     meaning: "chùa",
     vn: "Tự",
-    example: "寺におまいりする",
+    example: "寺にまいる",
     exampleMeaning: "đi thăm chùa",
     audio: a96,
     exampleAudio: ex96
