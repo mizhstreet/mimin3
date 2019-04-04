@@ -9,27 +9,27 @@
   <body>
     <div id="new"></div>
     <script>
-      // let dataString = "";
-      // for (let i = 310; i < 410; i++) {
-      //   dataString += "{\n";
-      //   dataString += "id:" + i + ",";
-      //   dataString += 'kanji:"",\n';
-      //   dataString += 'hira:"",\n';
-      //   dataString += 'meaning:"",\n';
-      //   dataString += 'romaji:"",\n';
-      //   dataString += 'vn:"",\n';
-      //   dataString += 'example:"",\n';
-      //   dataString += 'exampleMeaning:"",\n';
-      //   dataString += "audio:a" + (i + 1) + ",";
-      //   dataString += "exampleAudio:ex" + (i + 1);
-      //   dataString += "},\n";
-      // }
-      let importString = "";
-      for (let i = 311; i < 411; i++) {
-        importString +=
-          "import a" + i + ' from "../assets/audios/a' + i + '.mp3";';
+      let dataString = "";
+      for (let i = 410; i < 510; i++) {
+        dataString += "{\n";
+        dataString += "id:" + i + ",";
+        dataString += 'kanji:"",\n';
+        dataString += 'hira:"",\n';
+        dataString += 'meaning:"",\n';
+        dataString += 'romaji:"",\n';
+        dataString += 'vn:"",\n';
+        dataString += 'example:"",\n';
+        dataString += 'exampleMeaning:"",\n';
+        dataString += "audio:a" + (i + 1) + ",";
+        dataString += "exampleAudio:ex" + (i + 1);
+        dataString += "},\n";
       }
-      document.getElementById("new").innerHTML = importString;
+      // let importString = "";
+      // for (let i = 411; i < 511; i++) {
+      //   importString +=
+      //     "import ex" + i + ' from "../assets/audios/ex' + i + '.mp3";';
+      // }
+      document.getElementById("new").innerHTML = dataString;
     </script>
   </body>
 </html>

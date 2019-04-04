@@ -1667,7 +1667,7 @@ const data = [
     hira: "めいし",
     romaji: "meishi",
     meaning: "danh thiếp",
-    vn: "Danh thích",
+    vn: "Danh thứ",
     example: "名刺を交換する",
     exampleMeaning: "trao đổi danh thiếp",
     audio: a102,
