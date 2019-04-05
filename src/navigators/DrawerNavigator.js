@@ -38,18 +38,46 @@ const DrawerNavigator = createDrawerNavigator(
       "Unit 2"
     ),
     UnitThreeScreen: CustomNavOption(
-      "UnitTwoScreen",
+      "UnitThreeScreen",
       UnitScreen(258, 298),
       "book",
       "Unit 3",
       "Unit 3"
     ),
     UnitFourScreen: CustomNavOption(
-      "UnitTwoScreen",
-      UnitScreen(311, 409),
+      "UnitFourScreen",
+      UnitScreen(310, 410),
       "book",
       "Unit 4",
       "Unit 4"
+    ),
+    UnitFiveScreen: CustomNavOption(
+      "UnitFiveScreen",
+      UnitScreen(410, 510),
+      "book",
+      "Unit 5",
+      "Unit 5"
+    ),
+    UnitSixScreen: CustomNavOption(
+      "UnitSixScreen",
+      UnitScreen(510, 550),
+      "book",
+      "Unit 6",
+      "Unit "
+    ),
+    UnitSevenScreen: CustomNavOption(
+      "UnitSevenScreen",
+      UnitScreen(550, 590),
+      "book",
+      "Unit 7",
+      "Unit 7"
+    ),
+    UnitEightScreen: CustomNavOption(
+      "UnitEightScreen",
+      UnitScreen(590, 635),
+      "book",
+      "Unit 8",
+      "Unit 8"
     ),
     MatomeOneScreen: CustomNavOption(
       "UnitTwoScreen",

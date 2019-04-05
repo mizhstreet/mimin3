@@ -10,7 +10,7 @@
     <div id="new"></div>
     <script>
       let dataString = "";
-      for (let i = 550; i < 590; i++) {
+      for (let i = 635; i < 715; i++) {
         dataString += "{\n";
         dataString += "id:" + i + ",";
         dataString += 'kanji:"",\n';
@@ -24,9 +24,9 @@
         dataString += "exampleAudio:ex" + (i + 1);
         dataString += "},\n";
       }
-      // let importString = "";
-      // for (let i = 551; i < 591; i++) {
-      //   importString +=
+      // let dataString = "";
+      // for (let i = 636; i < 716; i++) {
+      //   dataString +=
       //     "import ex" + i + ' from "../assets/audios/ex' + i + '.mp3";';
       // }
       document.getElementById("new").innerHTML = dataString;
