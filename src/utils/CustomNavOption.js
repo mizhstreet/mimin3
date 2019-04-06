@@ -37,9 +37,11 @@ const CustomNavOption = (routeName, screen, iconName, drawerLabel, title) => {
   return {
     screen: stack,
     navigationOptions: {
-      drawerIcon: () => <MaterialIcons name={iconName} size={24} />,
+      drawerIcon: ({ tintColor }) => (
+        <MaterialIcons name={iconName} size={24} color={tintColor} />
+      ),
       drawerLabel,
-      title: title || drawerLabel
+      title
     }
   };
 };

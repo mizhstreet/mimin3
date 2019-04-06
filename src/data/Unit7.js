@@ -441,9 +441,9 @@ const data = [
     romaji: "tekitouna",
     vn: "Thích đương",
     example:
-      "-家庭教師を探しているが、適当な人がなかなかいない/n-あの人は適当な人だ",
+      "-家庭教師を探しているが、適当な人がなかなかいない/-あの人は適当な人だ",
     exampleMeaning:
-      "-tôi đang tìm kiếm gia sư nhưng mãi không tìn được người phù hợp/n-Người kia là người vô trách nhiệm",
+      "-tôi đang tìm kiếm gia sư nhưng mãi không tìn được người phù hợp/-Người kia là người vô trách nhiệm",
     audio: a580,
     exampleAudio: ex580
   },

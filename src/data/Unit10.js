@@ -228,9 +228,9 @@ const data = [
     romaji: "toosu",
     vn: "Thông",
     example:
-      "-カーテンをとおして光が部屋の中に入ってくる/n-この布は、空気は通すが水は通さない",
+      "-カーテンをとおして光が部屋の中に入ってくる/-この布は、空気は通すが水は通さない",
     exampleMeaning:
-      "-Ánh sáng xuyên qua rèm cửa vào phòng/n-vải này thoáng khí nhưng không thấm nước",
+      "-Ánh sáng xuyên qua rèm cửa vào phòng/-vải này thoáng khí nhưng không thấm nước",
     audio: a721,
     exampleAudio: ex721
   },
@@ -609,8 +609,8 @@ const data = [
     meaning: "cắt, hết hạn",
     romaji: "kireiru",
     vn: "Thiết",
-    example: "-このはさみはよく切れる/n-定期は切れる",
-    exampleMeaning: "cái kéo này cắt khá tốt/n-hết thời hạn",
+    example: "-このはさみはよく切れる/-定期は切れる",
+    exampleMeaning: "cái kéo này cắt khá tốt/-hết thời hạn",
     audio: a752,
     exampleAudio: ex752
   },

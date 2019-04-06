@@ -231,8 +231,8 @@ const data = [
     meaning: "Đổ, toát mồ hôi, gãi, xấu hổ, mất mặt",
     romaji: "kaku",
     vn: "",
-    example: "-頭をかく /n-はじをかく/n-あせをかく",
-    exampleMeaning: "-Gãi đầu /n-Xấu hổ/n-Đổ mồ hôi",
+    example: "-頭をかく /-はじをかく/-あせをかく",
+    exampleMeaning: "-Gãi đầu /-Xấu hổ/-Đổ mồ hôi",
     audio: a413,
     exampleAudio: ex413
   },
@@ -580,9 +580,9 @@ const data = [
     romaji: "tasukaru",
     vn: "Trợ (tự)",
     example:
-      "-飛行機が落ちたが、3人が助かった/n-この辺は値段が安くてとても助かる",
+      "-飛行機が落ちたが、3人が助かった/-この辺は値段が安くてとても助かる",
     exampleMeaning:
-      "-Máy bay bị rơi nhưng chỉ 3 người sống sót/n-Ở vùng này giá cả rẻ nên rất có lợi",
+      "-Máy bay bị rơi nhưng chỉ 3 người sống sót/-Ở vùng này giá cả rẻ nên rất có lợi",
     audio: a442,
     exampleAudio: ex442
   },
@@ -762,8 +762,8 @@ const data = [
     meaning: "Mở, tổ chức",
     romaji: "hiraku",
     vn: "Khai (tự/tha)",
-    example: "-ドアが開く/n-カーテンを開く",
-    exampleMeaning: "-(tự)Cửa mở/n-(tha)Mở rèm",
+    example: "-ドアが開く/-カーテンを開く",
+    exampleMeaning: "-(tự)Cửa mở/-(tha)Mở rèm",
     audio: a457,
     exampleAudio: ex457
   },
@@ -774,8 +774,8 @@ const data = [
     meaning: "Đóng",
     romaji: "tojiru",
     vn: "Bế (tự/tha)",
-    example: "-エレベーターのドアが閉じた/n-寒いのでドアを閉じる",
-    exampleMeaning: "-Cửa thang máy đóng/n-Vì lạnh nên đóng cửa",
+    example: "-エレベーターのドアが閉じた/-寒いのでドアを閉じる",
+    exampleMeaning: "-Cửa thang máy đóng/-Vì lạnh nên đóng cửa",
     audio: a458,
     exampleAudio: ex458
   },
@@ -1125,8 +1125,8 @@ const data = [
     meaning: "Làm vỡ, chia",
     romaji: "waru",
     vn: "Cát (tha)",
-    example: "-ガラスを割る/n-10を5で割ると2になる",
-    exampleMeaning: "-làm vỡ kính/n-10 chia 5 được 2",
+    example: "-ガラスを割る/-10を5で割ると2になる",
+    exampleMeaning: "-làm vỡ kính/-10 chia 5 được 2",
     audio: a487,
     exampleAudio: ex487
   },

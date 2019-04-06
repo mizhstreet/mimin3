@@ -1,11 +1,12 @@
 import React from "react";
-import { Dimensions, View, Text } from "react-native";
+import { Dimensions, View, Text, Image } from "react-native";
 import { Subscribe } from "unstated";
 import {
   LayoutProvider,
   DataProvider,
   RecyclerListView
 } from "recyclerlistview";
+import image from "../assets/images/nothing.png";
 import WordCard from "../components/WordCard";
 import WordStateContainer from "../state-containers/WordStateContainer";
 
@@ -16,8 +17,18 @@ const FavoriteScreen = () => (
     {container => {
       if (container.state.favoriteData.length === 0) {
         return (
-          <View>
-            <Text>no favorite data</Text>
+          <View
+            style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
+          >
+            <View style={{ alignItems: "center" }}>
+              <Image
+                source={image}
+                style={{ resizeMode: "cover", height: 300, width: 200 }}
+              />
+              <Text style={{ fontSize: 20, color: "grey" }}>
+                Chưa có từ vựng yêu thích nào!
+              </Text>
+            </View>
           </View>
         );
       }
@@ -32,7 +43,8 @@ const FavoriteScreen = () => (
       );
 
       const layoutProvider = new LayoutProvider(
-        i => dataProvider
+        i =>
+          dataProvider
             .cloneWithRows(
               container.state.favoriteData.map(item => ({
                 type: "normal",

@@ -6,8 +6,13 @@ import data5 from "./Unit5";
 import data6 from "./Unit6";
 import data7 from "./Unit7";
 import data8 from "./Unit8";
+import data9 from "./Unit9";
+import data10 from "./Unit10";
+import data11 from "./Unit11";
+import data12 from "./Unit12";
 import matome1 from "./Matome1";
 import matome2 from "./Matome2";
+import matome3 from "./Matome3";
 
 const data = [
   ...data1,
@@ -19,6 +24,11 @@ const data = [
   ...data5,
   ...data6,
   ...data7,
-  ...data8
+  ...data8,
+  ...data9,
+  ...data10,
+  ...data11,
+  ...matome3,
+  ...data12
 ];
 export default data;

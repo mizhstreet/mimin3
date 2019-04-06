@@ -56,7 +56,13 @@ export default class SearchScreen extends React.Component {
       this.setState({
         dataProvider: new DataProvider((r1, r2) => r1 !== r2).cloneWithRows(
           data
-            .filter(i => i.romaji.toLowerCase().includes(text.toLowerCase()))
+            .filter(
+              i => i.romaji.toLowerCase().includes(text.toLowerCase())
+                || i.hira.includes(text)
+                || i.kanji.includes(text)
+                || i.meaning.toLowerCase().includes(text.toLowerCase())
+                || i.vn.toLowerCase().includes(text.toLowerCase())
+            )
             .map(item => ({
               type: "normal",
               item

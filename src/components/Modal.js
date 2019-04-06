@@ -101,7 +101,8 @@ class Modal extends React.Component {
               example,
               exampleMeaning,
               exampleAudio,
-              visible
+              visible,
+              hira
             },
             handleVisible
           },
@@ -124,7 +125,7 @@ class Modal extends React.Component {
                 </View>
                 <View style={styles.dialogBody}>
                   <View style={styles.dialogHeading}>
-                    <Text style={styles.kanji}>{kanji}</Text>
+                    <Text style={styles.kanji}>{kanji || hira}</Text>
                     <Text style={styles.meaning}>{meaning}</Text>
                   </View>
                   <View style={styles.buttonWrapper}>
