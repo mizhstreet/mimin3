@@ -4,10 +4,7 @@
     "slug": "mimi",
     "privacy": "public",
     "sdkVersion": "31.0.0",
-    "platforms": [
-      "ios",
-      "android"
-    ],
+    "platforms": ["ios", "android"],
     "version": "1.0.0",
     "orientation": "default",
     "icon": "./assets/icon.png",
@@ -19,14 +16,14 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "icon": "/assets/icon-ios.png",
+      "bundleIdentifier": "com.mb.mimi"
     },
     "android": {
-       "package": "com.mb.mimi"
-   }
+      "package": "com.mb.mimi"
+    }
   }
 }
