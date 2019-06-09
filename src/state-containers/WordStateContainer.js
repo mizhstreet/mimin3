@@ -26,8 +26,9 @@ class WordStateContainer extends Container {
         favoriteData.unshift(this.state.data[item]);
       });
       await this.setState({ favoriteData, favoriteDataLoaded: true });
+    } else {
+      await this.setState({ favoriteDataLoaded: true });
     }
-    await this.setState({ favoriteDataLoaded: true });
   };
 
   handleFavorite = async index => {

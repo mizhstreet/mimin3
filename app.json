@@ -19,7 +19,6 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "icon": "/assets/icon-ios.png",
       "bundleIdentifier": "com.mb.mimi"
     },
     "android": {
