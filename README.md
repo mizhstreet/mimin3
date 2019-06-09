@@ -18,7 +18,7 @@
 - 発音
 - etc.
 
-[![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger) [![Dependency Status](http://img.shields.io/gemnasium/badges/badgerbadgerbadger.svg?style=flat-square)](https://gemnasium.com/badges/badgerbadgerbadger) [![Coverage Status](http://img.shields.io/coveralls/badges/badgerbadgerbadger.svg?style=flat-square)](https://coveralls.io/r/badges/badgerbadgerbadger) [![Code Climate](http://img.shields.io/codeclimate/github/badges/badgerbadgerbadger.svg?style=flat-square)](https://codeclimate.com/github/badges/badgerbadgerbadger) [![Github Issues](http://githubbadges.herokuapp.com/badges/badgerbadgerbadger/issues.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger/issues) [![Pending Pull-Requests](http://githubbadges.herokuapp.com/badges/badgerbadgerbadger/pulls.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger/pulls) [![Gem Version](http://img.shields.io/gem/v/badgerbadgerbadger.svg?style=flat-square)](https://rubygems.org/gems/badgerbadgerbadger) [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org) [![Badges](http://img.shields.io/:badges-9/9-ff6799.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger)
+[![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger) [![Dependency Status](http://img.shields.io/gemnasium/badges/badgerbadgerbadger.svg?style=flat-square)](https://gemnasium.com/badges/badgerbadgerbadger) [![Coverage Status](http://img.shields.io/coveralls/badges/badgerbadgerbadger.svg?style=flat-square)](https://coveralls.io/r/badges/badgerbadgerbadger)
 
 **_試写_**
 
@@ -26,7 +26,7 @@
 [![INSERT YOUR GRAPHIC HERE](https://lh3.googleusercontent.com/HH1Vd7v_4asDnI-Ya2tjixQxP4CD4HCQFE7Br1lPgn7XH7EoGWSdtVCpX5Cd4v2b-HcYZDJpc8N7VaR8-82v-k7vF4l0gVOXUmzUINSQtE_3sQx5n9BxjmTE_e5MaqWaMrAK3BNTZKe8xu-3O-LN_xIfIWF02_RSA_mjabyp1VgEmRFKfKPik8EiKS8blqoavtUoyK-PBbU43LyRLsv2NdYXRls9UHxyfOeRLEf-cn4yn4UaOpHpTjIP6Zk7nGy4ft1WocndllbB4_H7w6mAVTwtiN156308ebmXIx9k0OFph1UsijpDNrQfPfVEfYAwINLNie9-ZoECNQJcnd5xpD69XaI2iq-7KeFMOUeLB2lrZlHfYuyRx15hEJQB031dWEosQRCd1DMntKad6oVnybfQnysJt8YJiDgkFfqI_MlX--Ju7K3v8fSMvI3c_OcDyNaSGiMGmeA9W28IQvXQirjfcAReufQ4_VHrOCsJgc48RmC8aDQprGzh0YHjGDUEnI7W0Y2c5P_x8H5PV0NHiQeoEGk3hUDJHkuTg_64CYYWjL_obmHggDrfax14yDOicuPsPHtJlhJmxmdb-z_eNlMSYN0Y0zxofQoI1Iq_HVrGVv18MubCpyKZl5CxexAcZD2lNu38I5NnSxD9N_QMbvXf801kneSIpxnt1yLO8BoEnOtkEGe4uYJjdpomlVtDxDnVDokhi-IkETagKd_P0E8C=w260-h463-no)]()
 [![INSERT YOUR GRAPHIC HERE](https://lh3.googleusercontent.com/XVa-yhto3Q2KdB-wFNvTd4ViAl_9t4o8dzcNud91fnqz5MmaJh0L16E5OdvTSj7VeYEtxq-TAVa9HLp5WAoHuxy8q9CPRAnxGvhvh4gADAwApBfcLxCP-20cKxUTbOS25fA9pxYh3lcfhMMbqiVONQYY_z_rVXq25BDxxPzztRfucNlhy6Up-d7P0xJhPLOY0kquRCV9NYGwecJ64qerSoi6auYh9cZzdmCZ9m5V5WrFLuepjGNI99VZTfHPk9HZO2p_YAG8sRkfXWsnHfYpZrmTjnZXRTeHKNY81xKjuU35i23-Kq2244wZMefvYtuI3kai_Qc_S5rMpKFhh5UorAWHJa8N1u-42_d4WBW7WY8MeG7KqwxO2Zde0sMBymGBy_XorAIzENOUbC-GYiMchPu1eM3w8rsiD6rt14QcUpUwclnztPTxNlI35jyaw-SyW6hGPJ1iuKj1_RNe9Qg7DC8_39NPGsDpKQ3Plr49JQJVi_UxZCUUVMM-ss7kKq_3c17Tcr9ozjZkUQUxigdoS0RhdmwYZdtnQuqm7okFzSh7z5qPflh1NnmsHD-CiqjHtrV-ulk5QDswBYSp9sh-81drIkOvUvC2fgzFQBmSH81UgCJQumBklQV_U4q0L_eJG7rG8aLwtj6av5uS3ZgQ4U3dtdmPFQ3-AjHJHvsQ-J7_sKbOTHyA6DnhjqK_YwgRXGd9zvR51yvxgy_bRZKpmwiX=w260-h463-no)]()
 
-## Table of Contents (Optional)
+## 目次
 
 - [インストール](#インストール)
 - [貢献する](#貢献する)
