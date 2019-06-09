@@ -20,7 +20,7 @@
 
 [![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger) [![Dependency Status](http://img.shields.io/gemnasium/badges/badgerbadgerbadger.svg?style=flat-square)](https://gemnasium.com/badges/badgerbadgerbadger) [![Coverage Status](http://img.shields.io/coveralls/badges/badgerbadgerbadger.svg?style=flat-square)](https://coveralls.io/r/badges/badgerbadgerbadger) [![Code Climate](http://img.shields.io/codeclimate/github/badges/badgerbadgerbadger.svg?style=flat-square)](https://codeclimate.com/github/badges/badgerbadgerbadger) [![Github Issues](http://githubbadges.herokuapp.com/badges/badgerbadgerbadger/issues.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger/issues) [![Pending Pull-Requests](http://githubbadges.herokuapp.com/badges/badgerbadgerbadger/pulls.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger/pulls) [![Gem Version](http://img.shields.io/gem/v/badgerbadgerbadger.svg?style=flat-square)](https://rubygems.org/gems/badgerbadgerbadger) [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org) [![Badges](http://img.shields.io/:badges-9/9-ff6799.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger)
 
-**_Preview_**
+**_試写_**
 
 [![INSERT YOUR GRAPHIC HERE](https://lh3.googleusercontent.com/GVP06EOUj_f3m1AZf-nk4bk_iG3oFWp9g-51NblJHt3C62rAXBfDZ4Jilh20NnBZB2piVeyfsbHSsfc79KlmDEZ0egQY1o7E530sd40R9ejPff00-y8YAPgj9dqVani2Txnz0VigDI3S2wz6dVDqPG4ClBRJn_w9KKrjKhwKllA9Ud4NYNvtRCtAixvpyN4KKxKc-sdRwxbGy5pUDKQ2-EocpU0OGR2z4EnP70LYAXX9NB36lWknLR0qW1lO_9iVelKjXG9E3_AlnIhC8COeW2jZsmZirQwuPwZX6mnMefKRt0gTQSkwMN5gY4ugUKB0dcS9On0U-J5x-dnxZYZhirooAhWvyDqaSJlSxsO2DRtYGq6XJ7X1fOzVBlwbKPg7lA2DpUFMe4ETCM_VKFe395HFeI2Q_hnJ9xrCxq3pjaXjLQZqTI32n7Vx2oMwNiuwmPykqT7Tb3aSPEDksxGctV6s776I4KMwlJcENylfO9ZSlfxMYFSWopTjOLijKoPk_GAmDLHcAQ8yt1d6S3ehewWvwmutfewk9393WZbQ1ju6ZaMA1g0HN7QWEXu_QrcwgfC0HsPu_qvJc6zMjPEij0EQ6yLul84DAER7s_wGGRtxxDXoo17Cy-EVc5bVqfozcp0rsubTFlDPNteBWEChuqv24ky2qjgGeEBGSQOXRjuzaZxdWcfBg8-OVJB0NAMOzpHxxsbxMoO8GHQbskOsjPIw=w260-h463-no)]()
 [![INSERT YOUR GRAPHIC HERE](https://lh3.googleusercontent.com/HH1Vd7v_4asDnI-Ya2tjixQxP4CD4HCQFE7Br1lPgn7XH7EoGWSdtVCpX5Cd4v2b-HcYZDJpc8N7VaR8-82v-k7vF4l0gVOXUmzUINSQtE_3sQx5n9BxjmTE_e5MaqWaMrAK3BNTZKe8xu-3O-LN_xIfIWF02_RSA_mjabyp1VgEmRFKfKPik8EiKS8blqoavtUoyK-PBbU43LyRLsv2NdYXRls9UHxyfOeRLEf-cn4yn4UaOpHpTjIP6Zk7nGy4ft1WocndllbB4_H7w6mAVTwtiN156308ebmXIx9k0OFph1UsijpDNrQfPfVEfYAwINLNie9-ZoECNQJcnd5xpD69XaI2iq-7KeFMOUeLB2lrZlHfYuyRx15hEJQB031dWEosQRCd1DMntKad6oVnybfQnysJt8YJiDgkFfqI_MlX--Ju7K3v8fSMvI3c_OcDyNaSGiMGmeA9W28IQvXQirjfcAReufQ4_VHrOCsJgc48RmC8aDQprGzh0YHjGDUEnI7W0Y2c5P_x8H5PV0NHiQeoEGk3hUDJHkuTg_64CYYWjL_obmHggDrfax14yDOicuPsPHtJlhJmxmdb-z_eNlMSYN0Y0zxofQoI1Iq_HVrGVv18MubCpyKZl5CxexAcZD2lNu38I5NnSxD9N_QMbvXf801kneSIpxnt1yLO8BoEnOtkEGe4uYJjdpomlVtDxDnVDokhi-IkETagKd_P0E8C=w260-h463-no)]()
@@ -28,92 +28,81 @@
 
 ## Table of Contents (Optional)
 
-> If you're `README` has a lot of info, section headers might be nice.
-
-- [Installation](#installation)
-- [Contributing](#contributing)
-- [License](#license)
+- [インストール](#インストール)
+- [貢献する](#貢献する)
+- [ライセンス](#ライセンス)
 
 ---
 
-## Installation
+## インストール
 
-### Clone
+### クローンする
 
-- Clone this repository
+- このレポジトリをクローンする
 
 ```shell
 $ git clone https://github.com/mizhstreet/mimin3.git
 ```
 
-### Setup
-- To make it work, install expo cli first:
+### セットアップ
+- 最初にexpo-cliをインストール:
 
-> expo-cli
+> npmで
+
+```shell
+$ npm install -g expo-cli
+```
+> yarnで
 
 ```shell
 $ yarn global add expo-cli
 ```
 
-> or
+- セットアップ:
 
-```shell
-$ npm install -g expo-cli
-```
-
-- Setting up:
-
-> npm
+> npmで
 
 ```shell
 $ npm install
 ```
 
-> yarn
+> yarnで
 
 ```shell
 $ yarn install
 ```
-
-- For all the possible languages that support syntax highlithing on GitHub (which is basically all of them), refer <a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml" target="_blank">here</a>.
-
 ---
 
-## Usage (Optional)
+## 使い方
 ```shell
 $ yarn start
 ```
+---
 
-## Documentation (Optional)
+## 貢献する
+
+### ステップ 1
+
+- **オプション 1**
+
+  - 🍴 このrepoをフォークしてください!
+
+- **オプション 2**
+  - 👯 このレポジトリをあなたのローカルマシンにクローンする `https://github.com/mizhstreet/mimin3.git`
+
+### ステップ 2
+
+- **自由にコードをしてください!** 🔨🔨🔨
+
+### ステップ 3
+
+- 🔃 新しいプルリクエストを作成する
 
 ---
 
-## Contributing
-
-> To get started...
-
-### Step 1
-
-- **Option 1**
-
-  - 🍴 Fork this repo!
-
-- **Option 2**
-  - 👯 Clone this repo to your local machine using `https://github.com/mizhstreet/mimin3.git`
-
-### Step 2
-
-- **HACK AWAY!** 🔨🔨🔨
-
-### Step 3
-
-- 🔃 Create a new pull request.
-
----
-
-## License
+## ライセンス
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2015 © <a href="http://fvcproductions.com" target="_blank">FVCproductions</a>.
+- Copyright 2019 © <a href="http://fvcproductions.com" target="_blank">MrMb</a>.
