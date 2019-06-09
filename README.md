@@ -1,4 +1,4 @@
-<a href="#"><img src="https://raw.githubusercontent.com/mizhstreet/mimin3/master/assets/icon.png?s=200" title="Mb" alt="MB"></a>
+<a href="#"><img src="https://raw.githubusercontent.com/mizhstreet/mimin3/master/assets/icon.png&s=200" title="Mb" alt="MB"></a>
 
 <!-- [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) -->
 
