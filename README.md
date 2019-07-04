@@ -45,14 +45,16 @@ $ git clone https://github.com/mizhstreet/mimin3.git
 ```
 
 ### セットアップ
-- 最初にexpo-cliをインストール:
 
-> npmで
+- 最初に expo-cli をインストール:
+
+> npm で
 
 ```shell
 $ npm install -g expo-cli
 ```
-> yarnで
+
+> yarn で
 
 ```shell
 $ yarn global add expo-cli
@@ -60,23 +62,26 @@ $ yarn global add expo-cli
 
 - セットアップ:
 
-> npmで
+> npm で
 
 ```shell
 $ npm install
 ```
 
-> yarnで
+> yarn で
 
 ```shell
 $ yarn install
 ```
+
 ---
 
 ## 使い方
+
 ```shell
 $ yarn start
 ```
+
 ---
 
 ## 貢献する
@@ -85,7 +90,7 @@ $ yarn start
 
 - **オプション 1**
 
-  - 🍴 このrepoをフォークしてください!
+  - 🍴 この repo をフォークしてください!
 
 - **オプション 2**
   - 👯 このレポジトリをあなたのローカルマシンにクローンする `https://github.com/mizhstreet/mimin3.git`
