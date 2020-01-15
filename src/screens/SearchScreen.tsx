@@ -1,15 +1,15 @@
-import React from "react";
+import * as React from "react";
 import { MaterialIcons } from "@expo/vector-icons";
+import debounce from "lodash.debounce";
 import {
   LayoutProvider,
   DataProvider,
   RecyclerListView
 } from "recyclerlistview";
-import {
- Dimensions, View, TextInput, StyleSheet 
-} from "react-native";
+import { Dimensions, View, TextInput, StyleSheet } from "react-native";
 import WordCard from "../components/WordCard";
 import data from "../data/data";
+import { IWord } from "../types/IWord";
 
 const { width } = Dimensions.get("window");
 
@@ -41,36 +41,43 @@ const styles = StyleSheet.create({
   }
 });
 
-export default class SearchScreen extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      dataProvider: new DataProvider((r1, r2) => r1 !== r2).cloneWithRows(
-        data.map(item => ({
-          type: "normal",
-          item
-        }))
-      )
-    };
-    this.handleTextChange = text => {
+interface IState {
+  dataProvider: DataProvider;
+}
+
+export default class SearchScreen extends React.Component<any, IState> {
+  state: IState = {
+    dataProvider: new DataProvider((r1, r2) => r1 !== r2).cloneWithRows(
+      data.map(word => ({
+        type: "normal",
+        word
+      }))
+    )
+  };
+
+  handleTextChange = debounce((text: string) => {
+    const newData = data.filter(
+      i =>
+        i.romaji!.toLowerCase().includes(text.toLowerCase()) ||
+        i.hira.includes(text) ||
+        i.kanji.includes(text) ||
+        i.meaning.toLowerCase().includes(text.toLowerCase()) ||
+        i.vn.toLowerCase().includes(text.toLowerCase())
+    );
+
+    if (newData.length > 0)
       this.setState({
         dataProvider: new DataProvider((r1, r2) => r1 !== r2).cloneWithRows(
-          data
-            .filter(
-              i => i.romaji.toLowerCase().includes(text.toLowerCase())
-                || i.hira.includes(text)
-                || i.kanji.includes(text)
-                || i.meaning.toLowerCase().includes(text.toLowerCase())
-                || i.vn.toLowerCase().includes(text.toLowerCase())
-            )
-            .map(item => ({
-              type: "normal",
-              item
-            }))
+          newData.map(word => ({
+            type: "normal",
+            word
+          }))
         )
       });
-    };
-    this.layoutProvider = new LayoutProvider(
+  }, 300);
+
+  render() {
+    const layoutProvider = new LayoutProvider(
       i => this.state.dataProvider.getDataForIndex(i).type,
       (type, dim) => {
         switch (type) {
@@ -85,14 +92,13 @@ export default class SearchScreen extends React.Component {
         }
       }
     );
-  }
 
-  render() {
-    const rowRenderer = (_, rowData) => (
+    const rowRenderer = (_: any, { word }: { word: IWord }) => (
       <View>
-        <WordCard cardData={rowData.item} index={rowData.item.id} />
+        <WordCard {...word} />
       </View>
     );
+
     return (
       <View style={styles.container}>
         <View style={styles.searchBar}>
@@ -111,7 +117,7 @@ export default class SearchScreen extends React.Component {
           <RecyclerListView
             style={{ flex: 1, backgroundColor: "#e57373" }}
             dataProvider={this.state.dataProvider}
-            layoutProvider={this.layoutProvider}
+            layoutProvider={layoutProvider}
             rowRenderer={rowRenderer}
           />
         </React.Fragment>

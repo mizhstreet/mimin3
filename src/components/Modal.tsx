@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import {
   View,
   Text,
@@ -7,8 +7,8 @@ import {
   TouchableWithoutFeedback,
   TouchableNativeFeedback
 } from "react-native";
-import { MaterialIcons } from "@expo/vector-icons";
 import { Subscribe } from "unstated";
+import { MaterialIcons } from "@expo/vector-icons";
 import Dialog, {
   DialogContent,
   ScaleAnimation
@@ -86,10 +86,6 @@ const styles = StyleSheet.create({
 });
 
 class Modal extends React.Component {
-  playSound = async () => {
-    await this.props.data.exampleAudio.replayAsync();
-  };
-
   render() {
     return (
       <Subscribe to={[ModalStateContainer, WordSoundContainer]}>
@@ -105,8 +101,8 @@ class Modal extends React.Component {
               hira
             },
             handleVisible
-          },
-          player
+          }: ModalStateContainer,
+          player: WordSoundContainer
         ) => (
           <View>
             <Dialog

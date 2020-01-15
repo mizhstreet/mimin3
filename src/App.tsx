@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { createAppContainer } from "react-navigation";
 import { Provider } from "unstated";
 import Modal from "./components/Modal";

@@ -1,9 +1,16 @@
-import React from "react";
-import { createStackNavigator } from "react-navigation";
+import * as React from "react";
+import { createStackNavigator } from "react-navigation-stack";
 import { MaterialIcons } from "@expo/vector-icons";
 import { MaterialHeaderButtons, Item } from "../custom-components/HeaderButton";
+import { NavigationDrawerOptions } from "react-navigation-drawer";
 
-const CustomNavOption = (routeName, screen, iconName, drawerLabel, title) => {
+const CustomNavOption = (
+  routeName: string,
+  screen: React.ComponentType,
+  iconName: string,
+  drawerLabel: string,
+  title: string
+) => {
   const stack = createStackNavigator(
     {
       [routeName]: {
@@ -17,7 +24,7 @@ const CustomNavOption = (routeName, screen, iconName, drawerLabel, title) => {
           headerTitleStyle: {
             color: "white"
           },
-          headerLeft: (
+          headerLeft: () => (
             <MaterialHeaderButtons>
               <Item
                 buttonStyle={{ color: "white" }}
@@ -42,7 +49,7 @@ const CustomNavOption = (routeName, screen, iconName, drawerLabel, title) => {
       ),
       drawerLabel,
       title
-    }
+    } as NavigationDrawerOptions
   };
 };
 export default CustomNavOption;

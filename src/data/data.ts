@@ -13,8 +13,9 @@ import data12 from "./Unit12";
 import matome1 from "./Matome1";
 import matome2 from "./Matome2";
 import matome3 from "./Matome3";
+import { IWord } from "../types/IWord";
 
-const data = [
+const data: IWord[] = [
   ...data1,
   ...data2,
   ...matome1,

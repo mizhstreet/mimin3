@@ -1,4 +1,4 @@
-import { createDrawerNavigator } from "react-navigation";
+import { createDrawerNavigator } from "react-navigation-drawer";
 // component
 import DrawerContent from "../custom-components/DrawerContent";
 import SearchScreen from "../screens/SearchScreen";

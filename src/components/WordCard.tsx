@@ -1,12 +1,11 @@
-import React from "react";
+import * as React from "react";
 import { Subscribe } from "unstated";
-import {
- View, Text, StyleSheet, TouchableNativeFeedback 
-} from "react-native";
+import { View, Text, StyleSheet, TouchableNativeFeedback } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 import WordSoundContainer from "../state-containers/WordSoundContainer";
 import ModalStateContainer from "../state-containers/ModalStateContainer";
 import WordStateContainer from "../state-containers/WordStateContainer";
+import { IWord } from "../types/IWord";
 
 const styles = StyleSheet.create({
   card: {
@@ -64,9 +63,10 @@ const styles = StyleSheet.create({
   }
 });
 
-export default class WordCard extends React.PureComponent {
+export default class WordCard extends React.PureComponent<IWord> {
   render() {
     const {
+      id,
       audio,
       kanji,
       hira,
@@ -75,14 +75,12 @@ export default class WordCard extends React.PureComponent {
       meaning,
       example,
       exampleMeaning
-    } = this.props.cardData;
+    } = this.props;
     return (
       <View style={styles.card}>
         <View style={styles.cardContent}>
           <View style={styles.cardHeader}>
-            <Text style={styles.kanji}>
-              {`${this.props.index + 1}. ${kanji}`}
-            </Text>
+            <Text style={styles.kanji}>{`${id + 1}. ${kanji}`}</Text>
             <Text style={styles.vn}>{vn}</Text>
           </View>
           <Text style={styles.hira}>{hira}</Text>
@@ -91,17 +89,17 @@ export default class WordCard extends React.PureComponent {
         <View style={styles.cardButton}>
           <View style={styles.buttonWrapper}>
             <Subscribe to={[WordStateContainer]}>
-              {container => (
+              {(wordContainer: WordStateContainer) => (
                 <TouchableNativeFeedback
                   onPress={async () => {
-                    await container.handleFavorite(this.props.index);
+                    await wordContainer.handleFavorite(id);
                   }}
                   background={TouchableNativeFeedback.SelectableBackground()}
                 >
                   <View style={styles.iconWrapper}>
                     <MaterialIcons
                       name={
-                        container.state.data[this.props.index].favorite
+                        wordContainer.state.words[id].favorite
                           ? "favorite"
                           : "favorite-border"
                       }
@@ -114,10 +112,10 @@ export default class WordCard extends React.PureComponent {
           </View>
           <View style={styles.buttonWrapper}>
             <Subscribe to={[ModalStateContainer]}>
-              {modalData => (
+              {(modal: ModalStateContainer) => (
                 <TouchableNativeFeedback
-                  onPress={async () => {
-                    await modalData.setData({
+                  onPress={() => {
+                    modal.setData({
                       kanji,
                       hira,
                       meaning,
@@ -126,7 +124,7 @@ export default class WordCard extends React.PureComponent {
                       exampleMeaning,
                       exampleAudio
                     });
-                    await modalData.handleVisible();
+                    modal.handleVisible();
                   }}
                   background={TouchableNativeFeedback.SelectableBackground()}
                 >
@@ -139,7 +137,7 @@ export default class WordCard extends React.PureComponent {
           </View>
           <View style={styles.buttonWrapper}>
             <Subscribe to={[WordSoundContainer]}>
-              {player => (
+              {(player: WordSoundContainer) => (
                 <TouchableNativeFeedback
                   onPress={async () => {
                     await player.loadSound(audio);

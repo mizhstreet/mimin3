@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { Dimensions, View, Text, Image } from "react-native";
 import { Subscribe } from "unstated";
 import {
@@ -9,13 +9,14 @@ import {
 import image from "../assets/images/nothing.png";
 import WordCard from "../components/WordCard";
 import WordStateContainer from "../state-containers/WordStateContainer";
+import { IWord } from "../types/IWord";
 
 const { width } = Dimensions.get("window");
 
 const FavoriteScreen = () => (
   <Subscribe to={[WordStateContainer]}>
-    {container => {
-      if (container.state.favoriteData.length === 0) {
+    {(container: WordStateContainer) => {
+      if (container.state.favoriteWords.length === 0) {
         return (
           <View
             style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
@@ -36,9 +37,9 @@ const FavoriteScreen = () => (
       const dataProvider = new DataProvider(
         (r1, r2) => r1 !== r2
       ).cloneWithRows(
-        container.state.favoriteData.map(item => ({
+        container.state.favoriteWords.map(word => ({
           type: "normal",
-          item
+          word
         }))
       );
 
@@ -46,9 +47,9 @@ const FavoriteScreen = () => (
         i =>
           dataProvider
             .cloneWithRows(
-              container.state.favoriteData.map(item => ({
+              container.state.favoriteWords.map(word => ({
                 type: "normal",
-                item
+                word
               }))
             )
             .getDataForIndex(i).type,
@@ -66,9 +67,9 @@ const FavoriteScreen = () => (
         }
       );
 
-      const rowRenderer = (_, data) => (
+      const rowRenderer = (_: any, { word }: { word: IWord }) => (
         <View>
-          <WordCard cardData={data.item} index={data.item.id} />
+          <WordCard {...word} />
         </View>
       );
 

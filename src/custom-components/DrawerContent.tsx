@@ -1,8 +1,7 @@
-import React from "react";
-import {
- View, ScrollView, StyleSheet, Image 
-} from "react-native";
-import { DrawerItems, SafeAreaView } from "react-navigation";
+import * as React from "react";
+import { View, ScrollView, StyleSheet, Image } from "react-native";
+import { SafeAreaView } from "react-navigation";
+import { DrawerItems } from "react-navigation-drawer";
 import background from "../assets/images/maxresdefault.jpg";
 
 const styles = StyleSheet.create({
@@ -27,7 +26,7 @@ const styles = StyleSheet.create({
   }
 });
 
-const DrawerContent = props => (
+const DrawerContent: React.FC<any> = props => (
   <ScrollView>
     <SafeAreaView>
       <View style={styles.drawerHeader}>

@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { Dimensions, View } from "react-native";
 import { Subscribe } from "unstated";
 import {
@@ -10,21 +10,26 @@ import Spinner from "react-native-loading-spinner-overlay";
 import WordCard from "../components/WordCard";
 import WordStateContainer from "../state-containers/WordStateContainer";
 import data from "../data/data";
+import { IWord } from "../types/IWord";
 
 const { width } = Dimensions.get("window");
 
-const UnitScreen = (indexStart, indexEnd) => class extends React.Component {
-    constructor() {
-      super();
-      this.state = {
-        dataProvider: new DataProvider((r1, r2) => r1 !== r2).cloneWithRows(
-          data.slice(indexStart, indexEnd).map(item => ({
-            type: "normal",
-            item
-          }))
-        )
-      };
-      this.layoutProvider = new LayoutProvider(
+interface IState {
+  dataProvider: DataProvider;
+}
+const UnitScreen = (indexStart: number, indexEnd: number) =>
+  class extends React.Component<any, IState> {
+    state = {
+      dataProvider: new DataProvider((r1, r2) => r1 !== r2).cloneWithRows(
+        data.slice(indexStart, indexEnd).map(word => ({
+          type: "normal",
+          word
+        }))
+      )
+    };
+
+    render() {
+      const layoutProvider = new LayoutProvider(
         i => this.state.dataProvider.getDataForIndex(i).type,
         (type, dim) => {
           switch (type) {
@@ -39,23 +44,24 @@ const UnitScreen = (indexStart, indexEnd) => class extends React.Component {
           }
         }
       );
-    }
 
-    render() {
-      const rowRenderer = (_, rowData) => (
-        <View>
-          <WordCard cardData={rowData.item} index={rowData.item.id} />
-        </View>
-      );
+      const rowRenderer = (_: any, { word }: { word: IWord }) => {
+        return (
+          <View>
+            <WordCard {...word} />
+          </View>
+        );
+      };
+
       return (
         <Subscribe to={[WordStateContainer]}>
-          {container => {
-            if (container.state.favoriteDataLoaded) {
+          {(container: WordStateContainer) => {
+            if (container.state.isFavoriteLoaded) {
               return (
                 <RecyclerListView
                   style={{ flex: 1, backgroundColor: "#e57373" }}
                   dataProvider={this.state.dataProvider}
-                  layoutProvider={this.layoutProvider}
+                  layoutProvider={layoutProvider}
                   rowRenderer={rowRenderer}
                 />
               );
