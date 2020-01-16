@@ -12,7 +12,7 @@ import WordStateContainer from "../state-containers/WordStateContainer";
 import data from "../data/data";
 import { IWord } from "../types/IWord";
 
-const { width } = Dimensions.get("window");
+const { width, height } = Dimensions.get("window");
 
 interface IState {
   dataProvider: DataProvider;
@@ -58,12 +58,19 @@ const UnitScreen = (indexStart: number, indexEnd: number) =>
           {(container: WordStateContainer) => {
             if (container.state.isFavoriteLoaded) {
               return (
-                <RecyclerListView
-                  style={{ flex: 1, backgroundColor: "#e57373" }}
-                  dataProvider={this.state.dataProvider}
-                  layoutProvider={layoutProvider}
-                  rowRenderer={rowRenderer}
-                />
+                <View
+                  style={{
+                    width: "100%",
+                    height
+                  }}
+                >
+                  <RecyclerListView
+                    style={{ flex: 1, backgroundColor: "#e57373" }}
+                    dataProvider={this.state.dataProvider}
+                    layoutProvider={layoutProvider}
+                    rowRenderer={rowRenderer}
+                  />
+                </View>
               );
             }
             container.getFavoriteData();

@@ -18,8 +18,7 @@
 - 発音
 - etc.
 
-[![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger) [![Dependency Status](http://img.shields.io/gemnasium/badges/badgerbadgerbadger.svg?style=flat-square)](https://gemnasium.com/badges/badgerbadgerbadger) [![Coverage Status](http://img.shields.io/coveralls/badges/badgerbadgerbadger.svg?style=flat-square)](https://coveralls.io/r/badges/badgerbadgerbadger)
-
+[![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger) [![Dependency Status](http://img.shields.io/gemnasium/badges/badgerbadgerbadger.svg?style=flat-square)](https://gemnasium.com/badges/badgerbadgerbadger)
 **_試写_**
 
 [![INSERT YOUR GRAPHIC HERE](https://lh3.googleusercontent.com/GVP06EOUj_f3m1AZf-nk4bk_iG3oFWp9g-51NblJHt3C62rAXBfDZ4Jilh20NnBZB2piVeyfsbHSsfc79KlmDEZ0egQY1o7E530sd40R9ejPff00-y8YAPgj9dqVani2Txnz0VigDI3S2wz6dVDqPG4ClBRJn_w9KKrjKhwKllA9Ud4NYNvtRCtAixvpyN4KKxKc-sdRwxbGy5pUDKQ2-EocpU0OGR2z4EnP70LYAXX9NB36lWknLR0qW1lO_9iVelKjXG9E3_AlnIhC8COeW2jZsmZirQwuPwZX6mnMefKRt0gTQSkwMN5gY4ugUKB0dcS9On0U-J5x-dnxZYZhirooAhWvyDqaSJlSxsO2DRtYGq6XJ7X1fOzVBlwbKPg7lA2DpUFMe4ETCM_VKFe395HFeI2Q_hnJ9xrCxq3pjaXjLQZqTI32n7Vx2oMwNiuwmPykqT7Tb3aSPEDksxGctV6s776I4KMwlJcENylfO9ZSlfxMYFSWopTjOLijKoPk_GAmDLHcAQ8yt1d6S3ehewWvwmutfewk9393WZbQ1ju6ZaMA1g0HN7QWEXu_QrcwgfC0HsPu_qvJc6zMjPEij0EQ6yLul84DAER7s_wGGRtxxDXoo17Cy-EVc5bVqfozcp0rsubTFlDPNteBWEChuqv24ky2qjgGeEBGSQOXRjuzaZxdWcfBg8-OVJB0NAMOzpHxxsbxMoO8GHQbskOsjPIw=w260-h463-no)]()

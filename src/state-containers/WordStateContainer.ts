@@ -24,6 +24,7 @@ class WordStateContainer extends Container<IState> {
       const favoriteIndexes = JSON.parse(currentFavoriteIndexes) as number[];
       const favoriteWords: IWord[] = [];
       const words = this.state.words;
+
       favoriteIndexes.forEach(item => {
         words[item].favorite = true;
         favoriteWords.unshift(this.state.words[item]);
@@ -43,9 +44,12 @@ class WordStateContainer extends Container<IState> {
         const favoriteIndexes = JSON.parse(currentFavoriteIndexes);
         if (favoriteIndexes.includes(index)) {
           pull(favoriteIndexes, index);
+
           await this.setState(prevState => {
             const newData = prevState.words;
+
             newData[index].favorite = false;
+
             return {
               words: newData,
               favoriteWords: prevState.favoriteWords.filter(
@@ -55,10 +59,13 @@ class WordStateContainer extends Container<IState> {
           });
         } else {
           favoriteIndexes.push(index);
+
           await this.setState(prevState => {
             const newFavoriteData = prevState.favoriteWords;
+
             const newData = prevState.words;
             newData[index].favorite = true;
+
             newFavoriteData.unshift(prevState.words[index]);
             return {
               data: newData,
@@ -73,11 +80,14 @@ class WordStateContainer extends Container<IState> {
       } else {
         const favoriteIndexes = [];
         favoriteIndexes.push(index);
+
         const currentData = this.state.words;
         currentData[index].favorite = true;
+
         await this.setState(() => {
           const newFavoriteData = [];
           newFavoriteData.unshift(currentData[index]);
+
           return {
             data: currentData,
             favoriteWords: newFavoriteData

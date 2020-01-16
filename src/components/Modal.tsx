@@ -100,20 +100,20 @@ class Modal extends React.Component {
               visible,
               hira
             },
-            handleVisible
+            handleVisibility
           }: ModalStateContainer,
           player: WordSoundContainer
         ) => (
           <View>
             <Dialog
               visible={visible}
-              onTouchOutside={handleVisible}
+              onTouchOutside={handleVisibility}
               dialogStyle={styles.dialogWrapper}
               dialogAnimation={new ScaleAnimation()}
             >
               <DialogContent style={styles.dialogContent}>
                 <View style={styles.dialogHeader}>
-                  <TouchableWithoutFeedback onPress={handleVisible}>
+                  <TouchableWithoutFeedback onPress={handleVisibility}>
                     <View style={styles.closeBtnWrapper}>
                       <MaterialIcons name="close" size={24} color="#fff" />
                     </View>

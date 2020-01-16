@@ -5,6 +5,7 @@ interface IState {
   player: Audio.Sound;
   isPlaying: boolean;
 }
+
 class WordSoundContainer extends Container<IState> {
   state = {
     player: new Audio.Sound(),
@@ -16,19 +17,10 @@ class WordSoundContainer extends Container<IState> {
       if (!this.state.isPlaying) {
         await this.setState({ isPlaying: true });
         await this.state.player.unloadAsync();
+        await this.state.player.loadAsync(audio);
+        await this.state.player.replayAsync();
+        await this.setState({ isPlaying: false });
       }
-
-      await this.state.player.loadAsync(audio);
-      await this.playSound();
-      await this.setState({ isPlaying: false });
-    } catch (err) {
-      console.warn(err);
-    }
-  };
-
-  playSound = async () => {
-    try {
-      await this.state.player.replayAsync();
     } catch (err) {
       console.warn(err);
     }

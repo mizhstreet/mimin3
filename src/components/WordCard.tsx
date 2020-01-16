@@ -124,7 +124,7 @@ export default class WordCard extends React.PureComponent<IWord> {
                       exampleMeaning,
                       exampleAudio
                     });
-                    modal.handleVisible();
+                    modal.handleVisibility();
                   }}
                   background={TouchableNativeFeedback.SelectableBackground()}
                 >

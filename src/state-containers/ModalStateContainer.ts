@@ -17,14 +17,14 @@ class ModalStateContainer extends Container<IState> {
     visible: false
   };
 
-  setData = (data: Partial<IState>) => {
-    this.setState({
+  setData = async (data: Partial<IState>) => {
+    await this.setState({
       ...data
     });
   };
 
-  handleVisible = () => {
-    this.setState(prevState => ({
+  handleVisibility = async () => {
+    await this.setState(prevState => ({
       visible: !prevState.visible
     }));
   };
