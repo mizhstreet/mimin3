@@ -7,10 +7,13 @@ interface IState {
 }
 
 class WordSoundContainer extends Container<IState> {
-  state = {
-    player: new Audio.Sound(),
-    isPlaying: false
-  };
+  constructor() {
+    super();
+    this.state = {
+      player: new Audio.Sound(),
+      isPlaying: false
+    };
+  }
 
   loadSound = async (audio: any) => {
     try {

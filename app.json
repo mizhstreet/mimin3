@@ -16,12 +16,13 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
+    "assetBundlePatterns": ["assets/**/*", "src/assets/**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.mb.mimi"
+      "bundleIdentifier": "com.mb.mimin3"
     },
     "android": {
-      "package": "com.mb.mimi"
+      "package": "com.mb.mimin3"
     }
   }
 }
