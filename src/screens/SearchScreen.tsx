@@ -4,7 +4,7 @@ import debounce from "lodash.debounce";
 import {
   LayoutProvider,
   DataProvider,
-  RecyclerListView,
+  RecyclerListView
 } from "recyclerlistview";
 import { Dimensions, View, TextInput, StyleSheet } from "react-native";
 import WordCard from "../components/WordCard";
@@ -16,7 +16,7 @@ const { width } = Dimensions.get("window");
 const styles = StyleSheet.create({
   container: {
     backgroundColor: "#e57373",
-    flex: 1,
+    flex: 1
   },
   searchBar: {
     justifyContent: "space-between",
@@ -29,17 +29,17 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     backgroundColor: "white",
     marginHorizontal: 15,
-    marginVertical: 15,
+    marginVertical: 15
   },
   input: {
     height: 40,
     fontSize: 20,
-    flex: 1,
+    flex: 1
   },
   list: {
     flex: 1,
-    paddingBottom: 30,
-  },
+    paddingBottom: 30
+  }
 });
 
 interface IState {
@@ -49,16 +49,16 @@ interface IState {
 export default class SearchScreen extends React.Component<any, IState> {
   state: IState = {
     dataProvider: new DataProvider((r1, r2) => r1 !== r2).cloneWithRows(
-      data.map((word) => ({
+      data.map(word => ({
         type: "normal",
-        word,
+        word
       }))
-    ),
+    )
   };
 
   handleTextChange = debounce((text: string) => {
     const newData = data.filter(
-      (i) =>
+      i =>
         i.romaji!.toLowerCase().includes(text.toLowerCase()) ||
         i.hira.includes(text) ||
         i.kanji.includes(text) ||
@@ -69,17 +69,17 @@ export default class SearchScreen extends React.Component<any, IState> {
     if (newData.length > 0)
       this.setState({
         dataProvider: new DataProvider((r1, r2) => r1 !== r2).cloneWithRows(
-          newData.map((word) => ({
+          newData.map(word => ({
             type: "normal",
-            word,
+            word
           }))
-        ),
+        )
       });
   }, 300);
 
   render() {
     const layoutProvider = new LayoutProvider(
-      (i) => this.state.dataProvider.getDataForIndex(i).type,
+      i => this.state.dataProvider.getDataForIndex(i).type,
       (type, dim) => {
         switch (type) {
           case "normal":
@@ -106,7 +106,7 @@ export default class SearchScreen extends React.Component<any, IState> {
           <TextInput
             placeholder="Tìm gì đó ..."
             style={styles.input}
-            onChangeText={(text) => {
+            onChangeText={text => {
               this.handleTextChange(text);
             }}
           />
