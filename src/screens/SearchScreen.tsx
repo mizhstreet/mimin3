@@ -111,7 +111,7 @@ export default class SearchScreen extends React.Component<any, IState> {
             }}
           />
           <View>
-            <MaterialIcons name="search" size={23} style={styles.icon} />
+            <MaterialIcons name="search" size={23} />
           </View>
         </View>
         <React.Fragment>
