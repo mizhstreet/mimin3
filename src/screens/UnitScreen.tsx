@@ -4,7 +4,7 @@ import { Subscribe } from "unstated";
 import {
   RecyclerListView,
   LayoutProvider,
-  DataProvider
+  DataProvider,
 } from "recyclerlistview";
 import Spinner from "react-native-loading-spinner-overlay";
 import WordCard from "../components/WordCard";
@@ -21,16 +21,16 @@ const UnitScreen = (indexStart: number, indexEnd: number) =>
   class extends React.Component<any, IState> {
     state = {
       dataProvider: new DataProvider((r1, r2) => r1 !== r2).cloneWithRows(
-        data.slice(indexStart, indexEnd).map(word => ({
+        data.slice(indexStart, indexEnd).map((word) => ({
           type: "normal",
-          word
+          word,
         }))
-      )
+      ),
     };
 
     render() {
       const layoutProvider = new LayoutProvider(
-        i => this.state.dataProvider.getDataForIndex(i).type,
+        (i) => this.state.dataProvider.getDataForIndex(i).type,
         (type, dim) => {
           switch (type) {
             case "normal":
@@ -61,7 +61,8 @@ const UnitScreen = (indexStart: number, indexEnd: number) =>
                 <View
                   style={{
                     width: "100%",
-                    height
+                    height,
+                    flex: 1,
                   }}
                 >
                   <RecyclerListView
